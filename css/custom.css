@@ -43,16 +43,65 @@ a:hover {
   color: #003b6f;
 }
 
-/* Header y footer */
-/* #header,
+/* ===== Footer ===== */
 #footer {
-  color: #fff;
-} */
+  background-color: #003b6f; /* azul corporativo */
+  padding: 25px 0 0 0;
+  font-size: 14px;
+  line-height: 1.5;
+  text-align: center;
+}
 
-/* Personalizar links del footer */
-#footer a {
+/* Textos */
+#footer p,
+#footer a,
+#footer .footer-big-contacts {
   color: #ccc;
 }
 #footer a:hover {
   color: #fff;
+  text-decoration: none;
+}
+
+/* Iconos sociales */
+#footer .social-icon {
+  width: 36px;
+  height: 36px;
+  line-height: 36px;
+  border-radius: 50%;
+  display: inline-block;
+  text-align: center;
+  margin: 0 5px;
+  background-color: #003b6f; /* azul más oscuro */
+  color: #fff;
+  font-size: 14px;
+  transition: all 0.3s ease;
+}
+#footer .social-icon:hover {
+  background-color: #d32f2f; /* rojo corporativo en hover */
+}
+
+/* Copyright */
+#copyrights {
+  background-color: #002c54; /* azul más oscuro */
+  padding: 12px 0;
+  font-size: 13px;
+  text-align: center;
+}
+#copyrights a {
+  color: #aaa;
+  margin: 0 8px;
+}
+#copyrights a:hover {
+  color: #fff;
+}
+
+/* ===== Responsive ajustes ===== */
+@media (min-width: 768px) {
+  #footer {
+    text-align: left;
+  }
+  #footer .row > div:last-child {
+    text-align: right;
+  }
 }
