@@ -377,7 +377,7 @@
 									<img class="rounded" src="demos/construction/images/services/1.jpg" alt="Why choose Us?">
 								</div>
 								<div class="fbox-content px-0">
-									<h3>Skilled Professionals.<span class="subtitle">Your Property in Good Hands.</span></h3>
+									<h3>Profesionales Especializados<span class="subtitle">Tu propiedad en buenas manos</span></h3>
 									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi rem, facilis nobis voluptatum
 										est voluptatem accusamus molestiae eaque perspiciatis mollitia.</p>
 								</div>
@@ -390,7 +390,7 @@
 									<img class="rounded" src="images/services/1.jpg" alt="Effective Planning">
 								</div>
 								<div class="fbox-content px-0">
-									<h3>Effective Planning.<span class="subtitle">Construction Process Organized.</span></h3>
+									<h3>Planificación Efectiva<span class="subtitle">Procesos organizados de montado.</span></h3>
 									<p>Porro repellat vero sapiente amet vitae quibusdam necessitatibus consectetur, labore totam.
 										Accusamus perspiciatis asperiores labore esse.</p>
 								</div>
@@ -403,7 +403,7 @@
 									<img class="rounded" src="demos/construction/images/services/2.jpg" alt="Why choose Us?">
 								</div>
 								<div class="fbox-content px-0">
-									<h3>Risk Management.<span class="subtitle">We have got you Covered.</span></h3>
+									<h3>Seguridad Garantizada<span class="subtitle">Lorem ipsum dolor sit.</span></h3>
 									<p>Quos, non, esse eligendi ab accusantium voluptatem. Maxime eligendi beatae, atque tempora ullam.
 										Vitae delectus quia, consequuntur rerum quo.</p>
 								</div>
@@ -478,10 +478,10 @@
 						<div class="col-lg-4 col-md-6">
 							<div class="feature-box fbox-plain">
 								<div class="fbox-icon">
-									<a href="#"><img src="demos/construction/images/icons/building.png" alt="Concrete Developments"></a>
+									<a href="#"><img src="demos/construction/images/icons/building.png" alt="Proyectos Concretos"></a>
 								</div>
 								<div class="fbox-content">
-									<h3>Concrete Developments</h3>
+									<h3>Proyectos Concretos</h3>
 									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem minima, facere distinctio placeat.
 									</p>
 								</div>
@@ -490,10 +490,10 @@
 						<div class="col-lg-4 col-md-6">
 							<div class="feature-box fbox-plain">
 								<div class="fbox-icon">
-									<a href="#"><img src="demos/construction/images/icons/bank.png" alt="Finance Assistance"></a>
+									<a href="#"><img src="demos/construction/images/icons/bank.png" alt="Asesoramiento Financiero"></a>
 								</div>
 								<div class="fbox-content">
-									<h3>Finance Assistance</h3>
+									<h3>Asesoramiento Financiero</h3>
 									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem minima, facere distinctio placeat.
 									</p>
 								</div>
@@ -502,10 +502,10 @@
 						<div class="col-lg-4 col-md-6">
 							<div class="feature-box fbox-plain">
 								<div class="fbox-icon">
-									<a href="#"><img src="demos/construction/images/icons/drawer.png" alt="Interiorly Designed"></a>
+									<a href="#"><img src="demos/construction/images/icons/drawer.png" alt="Diseño Interior"></a>
 								</div>
 								<div class="fbox-content">
-									<h3>Interiorly Designed</h3>
+									<h3>Diseño Interior</h3>
 									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem minima, facere distinctio placeat.
 									</p>
 								</div>
@@ -515,10 +515,10 @@
 							<div class="feature-box fbox-plain">
 								<div class="fbox-icon">
 									<a href="#"><img src="demos/construction/images/icons/paper-money.png"
-											alt="Cost Effective Solutions"></a>
+											alt="Soluciones a Bajo Costo"></a>
 								</div>
 								<div class="fbox-content">
-									<h3>Cost Effective Solutions</h3>
+									<h3>Soluciones a Bajo Costo</h3>
 									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem minima, facere distinctio placeat.
 									</p>
 								</div>
@@ -527,10 +527,11 @@
 						<div class="col-lg-4 col-md-6">
 							<div class="feature-box fbox-plain">
 								<div class="fbox-icon">
-									<a href="#"><img src="demos/construction/images/icons/traffic-cone.png" alt="Smart Builders"></a>
+									<a href="#"><img src="demos/construction/images/icons/traffic-cone.png"
+											alt="Montadores Especializados"></a>
 								</div>
 								<div class="fbox-content">
-									<h3>Smart Builders</h3>
+									<h3>Montadores Especializados</h3>
 									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem minima, facere distinctio placeat.
 									</p>
 								</div>
@@ -540,10 +541,10 @@
 							<div class="feature-box fbox-plain">
 								<div class="fbox-icon">
 									<a href="#"><img src="demos/construction/images/icons/paint-brush.png"
-											alt="Quality Infrastructure"></a>
+											alt="Infraestructura de Calidad"></a>
 								</div>
 								<div class="fbox-content">
-									<h3>Quality Infrastructure</h3>
+									<h3>Infraestructura de Calidad</h3>
 									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem minima, facere distinctio placeat.
 									</p>
 								</div>
@@ -691,8 +692,8 @@
 					class="button border-bottom-0 button-full text-center text-end mb-6 fw-light font-primary"
 					style="font-size: 26px;">
 					<div class="container">
-						Would you like to Build your Dream Home with Us? <strong>Enquire Here</strong> <i
-							class="uil uil-angle-right-b" style="top:3px;"></i>
+						¿Sueñas con un hogar mas luminoso y moderno? <strong>Cotiza aquí</strong> <i class="uil uil-angle-right-b"
+							style="top:3px;"></i>
 					</div>
 				</a>
 
@@ -995,16 +996,16 @@
 							</div>
 							<div class="col-lg-5 mt-4">
 								<div class="heading-block border-bottom-0">
-									<h2>You're in Good Hands.</h2>
-									<span class="ls-1">Five Points that define Our Reliability.</span>
+									<h2>Confía en los expertos en carpintería de aluminio</h2>
+									<span class="ls-1">Cinco razones que nos hacen tu mejor elección:</span>
 								</div>
 
 								<ul class="iconlist iconlist-large iconlist-color">
-									<li><i class="fa-solid fa-check"></i> Market Leader since 1915</li>
-									<li><i class="fa-solid fa-check"></i> Positive Results within Deadlines</li>
-									<li><i class="fa-solid fa-check"></i> 100% Reliability &amp; Guarantee</li>
-									<li><i class="fa-solid fa-check"></i> Dedicated Professional Team of 500+</li>
-									<li><i class="fa-solid fa-check"></i> Unmatched After Project Completion Support</li>
+									<li><i class="fa-solid fa-check"></i> Más de 30 años de experiencia</li>
+									<li><i class="fa-solid fa-check"></i> Calidad y precisión en cada detalle</li>
+									<li><i class="fa-solid fa-check"></i> Cumplimiento garantizado</li>
+									<li><i class="fa-solid fa-check"></i> Equipo técnico especializado</li>
+									<li><i class="fa-solid fa-check"></i> Servicio postventa que marca la diferencia</li>
 								</ul>
 							</div>
 						</div>
