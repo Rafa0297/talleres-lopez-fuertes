@@ -3,38 +3,49 @@
 
 <head>
 
-	<meta http-equiv="content-type" content="text/html; charset=utf-8">
-	<meta http-equiv="x-ua-compatible" content="IE=edge">
-	<meta name="author" content="SemiColonWeb">
-	<meta name="description"
-		content="Create Corporate Construction services Websites with Canvas Template. Get Canvas to build powerful websites easily with the Highly Customizable &amp; Best Selling Bootstrap Template, today.">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="x-ua-compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<!-- Font Imports -->
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link
-		href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Source+Sans+Pro:wght@300;400;600;700&display=swap"
-		rel="stylesheet">
+		<!-- SEO Básico -->
+		<title>Talleres López Fuertes | Carpintería de Aluminio y PVC en Marbella</title>
+		<meta name="description"
+			content="Talleres López Fuertes es especialista en carpintería de aluminio, PVC, persianas, cortinas de cristal y mamparas en Marbella y la Costa del Sol. Calidad y diseño a medida.">
+		<meta name="author" content="Talleres López Fuertes">
 
-	<!-- Core Style -->
-	<link rel="stylesheet" href="style.css">
+		<!-- Icono del sitio -->
+		<link rel="icon" href="demos/construction/images/icons/favicon32.png" type="image/png">
 
-	<!-- Font Icons -->
-	<link rel="stylesheet" href="css/font-icons.css">
+		<!-- Open Graph (para Facebook, LinkedIn, WhatsApp) -->
+		<meta property="og:title" content="Talleres López Fuertes | Carpintería de Aluminio y PVC en Marbella">
+		<meta property="og:description"
+			content="Especialistas en carpintería de aluminio, PVC y cerramientos. Calidad, diseño y soluciones a medida en la Costa del Sol.">
+		<meta property="og:image" content="https://tallereslopezfuertes.icomdi.com/demos/construction/images/slider/1.jpg">
+		<meta property="og:url" content="https://tallereslopezfuertes.icomdi.com">
+		<meta property="og:type" content="website">
 
-	<!-- Plugins/Components CSS -->
-	<link rel="stylesheet" href="css/swiper.css">
+		<!-- Twitter Card -->
+		<meta name="twitter:card" content="summary_large_image">
+		<meta name="twitter:title" content="Talleres López Fuertes | Carpintería de Aluminio y PVC en Marbella">
+		<meta name="twitter:description" content="Carpintería de aluminio, PVC, persianas y cerramientos en Marbella.">
+		<meta name="twitter:image" content="https://tallereslopezfuertes.icomdi.com/demos/construction/images/slider/1.jpg">
 
-	<!-- Niche Demos -->
-	<link rel="stylesheet" href="demos/construction/construction.css">
+		<!-- Fuentes -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Source+Sans+Pro:wght@300;400;600;700&display=swap"
+			rel="stylesheet">
 
-	<!-- Custom CSS -->
-	<link rel="stylesheet" href="css/custom.css">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- CSS -->
+		<link rel="stylesheet" href="style.css">
+		<link rel="stylesheet" href="css/font-icons.css">
+		<link rel="stylesheet" href="css/swiper.css">
+		<link rel="stylesheet" href="demos/construction/construction.css">
+		<link rel="stylesheet" href="css/custom.css">
+	</head>
 
-	<!-- Document Title
-	============================================= -->
-	<title>Inicio | Talleres López Fuertes</title>
 
 </head>
 
@@ -104,7 +115,7 @@
 					<!-- Logo
 					============================================= -->
 					<div id="logo" class="ms-auto ms-lg-0 me-lg-auto">
-						<a href="demo-construction.php">
+						<a href="index.php">
 							<img class="logo-default"
 								srcset="demos/construction/images/logo.png, demos/construction/images/logo@2x.png 2x"
 								src="demos/construction/images/logo@2x.png" alt="Canvas Logo">
@@ -171,7 +182,7 @@
 								<li class="menu-item current"><a class="menu-link" href="index.php">
 										<div>Inicio</div>
 									</a></li>
-								<li class="menu-item"><a class="menu-link" href="demo-construction-about-us.php">
+								<li class="menu-item"><a class="menu-link" href="la-empresa.php">
 										<div>La Empresa</div>
 									</a></li>
 								<li class="menu-item"><a class="menu-link" href="demo-construction-services.php">
@@ -366,7 +377,7 @@
 									<img class="rounded" src="demos/construction/images/services/1.jpg" alt="Why choose Us?">
 								</div>
 								<div class="fbox-content px-0">
-									<h3>Skilled Professionals.<span class="subtitle">Your Property in Good Hands.</span></h3>
+									<h3>Profesionales Especializados<span class="subtitle">Tu propiedad en buenas manos</span></h3>
 									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi rem, facilis nobis voluptatum
 										est voluptatem accusamus molestiae eaque perspiciatis mollitia.</p>
 								</div>
@@ -379,7 +390,7 @@
 									<img class="rounded" src="images/services/1.jpg" alt="Effective Planning">
 								</div>
 								<div class="fbox-content px-0">
-									<h3>Effective Planning.<span class="subtitle">Construction Process Organized.</span></h3>
+									<h3>Planificación Efectiva<span class="subtitle">Procesos organizados de montado.</span></h3>
 									<p>Porro repellat vero sapiente amet vitae quibusdam necessitatibus consectetur, labore totam.
 										Accusamus perspiciatis asperiores labore esse.</p>
 								</div>
@@ -392,7 +403,7 @@
 									<img class="rounded" src="demos/construction/images/services/2.jpg" alt="Why choose Us?">
 								</div>
 								<div class="fbox-content px-0">
-									<h3>Risk Management.<span class="subtitle">We have got you Covered.</span></h3>
+									<h3>Seguridad Garantizada<span class="subtitle">Lorem ipsum dolor sit.</span></h3>
 									<p>Quos, non, esse eligendi ab accusantium voluptatem. Maxime eligendi beatae, atque tempora ullam.
 										Vitae delectus quia, consequuntur rerum quo.</p>
 								</div>
@@ -467,10 +478,10 @@
 						<div class="col-lg-4 col-md-6">
 							<div class="feature-box fbox-plain">
 								<div class="fbox-icon">
-									<a href="#"><img src="demos/construction/images/icons/building.png" alt="Concrete Developments"></a>
+									<a href="#"><img src="demos/construction/images/icons/building.png" alt="Proyectos Concretos"></a>
 								</div>
 								<div class="fbox-content">
-									<h3>Concrete Developments</h3>
+									<h3>Proyectos Concretos</h3>
 									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem minima, facere distinctio placeat.
 									</p>
 								</div>
@@ -479,10 +490,10 @@
 						<div class="col-lg-4 col-md-6">
 							<div class="feature-box fbox-plain">
 								<div class="fbox-icon">
-									<a href="#"><img src="demos/construction/images/icons/bank.png" alt="Finance Assistance"></a>
+									<a href="#"><img src="demos/construction/images/icons/bank.png" alt="Asesoramiento Financiero"></a>
 								</div>
 								<div class="fbox-content">
-									<h3>Finance Assistance</h3>
+									<h3>Asesoramiento Financiero</h3>
 									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem minima, facere distinctio placeat.
 									</p>
 								</div>
@@ -491,10 +502,10 @@
 						<div class="col-lg-4 col-md-6">
 							<div class="feature-box fbox-plain">
 								<div class="fbox-icon">
-									<a href="#"><img src="demos/construction/images/icons/drawer.png" alt="Interiorly Designed"></a>
+									<a href="#"><img src="demos/construction/images/icons/drawer.png" alt="Diseño Interior"></a>
 								</div>
 								<div class="fbox-content">
-									<h3>Interiorly Designed</h3>
+									<h3>Diseño Interior</h3>
 									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem minima, facere distinctio placeat.
 									</p>
 								</div>
@@ -504,10 +515,10 @@
 							<div class="feature-box fbox-plain">
 								<div class="fbox-icon">
 									<a href="#"><img src="demos/construction/images/icons/paper-money.png"
-											alt="Cost Effective Solutions"></a>
+											alt="Soluciones a Bajo Costo"></a>
 								</div>
 								<div class="fbox-content">
-									<h3>Cost Effective Solutions</h3>
+									<h3>Soluciones a Bajo Costo</h3>
 									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem minima, facere distinctio placeat.
 									</p>
 								</div>
@@ -516,10 +527,11 @@
 						<div class="col-lg-4 col-md-6">
 							<div class="feature-box fbox-plain">
 								<div class="fbox-icon">
-									<a href="#"><img src="demos/construction/images/icons/traffic-cone.png" alt="Smart Builders"></a>
+									<a href="#"><img src="demos/construction/images/icons/traffic-cone.png"
+											alt="Montadores Especializados"></a>
 								</div>
 								<div class="fbox-content">
-									<h3>Smart Builders</h3>
+									<h3>Montadores Especializados</h3>
 									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem minima, facere distinctio placeat.
 									</p>
 								</div>
@@ -529,10 +541,10 @@
 							<div class="feature-box fbox-plain">
 								<div class="fbox-icon">
 									<a href="#"><img src="demos/construction/images/icons/paint-brush.png"
-											alt="Quality Infrastructure"></a>
+											alt="Infraestructura de Calidad"></a>
 								</div>
 								<div class="fbox-content">
-									<h3>Quality Infrastructure</h3>
+									<h3>Infraestructura de Calidad</h3>
 									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem minima, facere distinctio placeat.
 									</p>
 								</div>
@@ -680,8 +692,8 @@
 					class="button border-bottom-0 button-full text-center text-end mb-6 fw-light font-primary"
 					style="font-size: 26px;">
 					<div class="container">
-						Would you like to Build your Dream Home with Us? <strong>Enquire Here</strong> <i
-							class="uil uil-angle-right-b" style="top:3px;"></i>
+						¿Sueñas con un hogar mas luminoso y moderno? <strong>Cotiza aquí</strong> <i class="uil uil-angle-right-b"
+							style="top:3px;"></i>
 					</div>
 				</a>
 
@@ -984,16 +996,16 @@
 							</div>
 							<div class="col-lg-5 mt-4">
 								<div class="heading-block border-bottom-0">
-									<h2>You're in Good Hands.</h2>
-									<span class="ls-1">Five Points that define Our Reliability.</span>
+									<h2>Confía en los expertos en carpintería de aluminio</h2>
+									<span class="ls-1">Cinco razones que nos hacen tu mejor elección:</span>
 								</div>
 
 								<ul class="iconlist iconlist-large iconlist-color">
-									<li><i class="fa-solid fa-check"></i> Market Leader since 1915</li>
-									<li><i class="fa-solid fa-check"></i> Positive Results within Deadlines</li>
-									<li><i class="fa-solid fa-check"></i> 100% Reliability &amp; Guarantee</li>
-									<li><i class="fa-solid fa-check"></i> Dedicated Professional Team of 500+</li>
-									<li><i class="fa-solid fa-check"></i> Unmatched After Project Completion Support</li>
+									<li><i class="fa-solid fa-check"></i> Más de 30 años de experiencia</li>
+									<li><i class="fa-solid fa-check"></i> Calidad y precisión en cada detalle</li>
+									<li><i class="fa-solid fa-check"></i> Cumplimiento garantizado</li>
+									<li><i class="fa-solid fa-check"></i> Equipo técnico especializado</li>
+									<li><i class="fa-solid fa-check"></i> Servicio postventa que marca la diferencia</li>
 								</ul>
 							</div>
 						</div>
@@ -1008,138 +1020,38 @@
 		<footer id="footer" class="dark">
 			<div class="container">
 
-				<!-- Footer Widgets
-				============================================= -->
-				<div class="footer-widgets-wrap">
-
-					<div class="row">
-						<div class="col-lg-9">
-							<div class="widget">
-
-								<img src="images/footer-widget-logo.png" alt="Image" class="alignleft"
-									style="margin-top: 8px; padding-right: 18px; border-right: 1px solid #4A4A4A;">
-
-								<p>We believe in <strong>Simple</strong>, <strong>Creative</strong> &amp; <strong>Flexible</strong>
-									Design Standards with a Retina &amp; Responsive Approach. Browse the amazing Features this template
-									offers.</p>
-
-								<div class="line" style="margin: 30px 0;"></div>
-
-								<div class="row col-mb-30">
-									<div class="col-lg-3 col-6 widget_links">
-										<ul>
-											<li><a href="#">Home</a></li>
-											<li><a href="#">About</a></li>
-											<li><a href="#">FAQs</a></li>
-											<li><a href="#">Support</a></li>
-											<li><a href="#">Contact</a></li>
-										</ul>
-									</div>
-
-									<div class="col-lg-3 col-6 widget_links">
-										<ul>
-											<li><a href="#">Shop</a></li>
-											<li><a href="#">Portfolio</a></li>
-											<li><a href="#">Blog</a></li>
-											<li><a href="#">Events</a></li>
-											<li><a href="#">Forums</a></li>
-										</ul>
-									</div>
-
-									<div class="col-lg-3 col-6 widget_links">
-										<ul>
-											<li><a href="#">Corporate</a></li>
-											<li><a href="#">Agency</a></li>
-											<li><a href="#">eCommerce</a></li>
-											<li><a href="#">Personal</a></li>
-											<li><a href="#">One Page</a></li>
-										</ul>
-									</div>
-
-									<div class="col-lg-3 col-6 widget_links">
-										<ul>
-											<li><a href="#">Restaurant</a></li>
-											<li><a href="#">Wedding</a></li>
-											<li><a href="#">App Showcase</a></li>
-											<li><a href="#">Magazine</a></li>
-											<li><a href="#">Landing Page</a></li>
-										</ul>
-									</div>
-								</div>
-
-							</div>
-						</div>
-
-						<div class="col-lg-3 mt-5 mt-lg-0">
-							<div class="widget">
-
-								<div class="row col-mb-30">
-									<div class="col-12">
-										<div class="footer-big-contacts">
-											<span>Call Us:</span>
-											(1) 22 55412474
-										</div>
-									</div>
-
-									<div class="col-12">
-										<div class="footer-big-contacts">
-											<span>Send an Email:</span>
-											info@canvas.com
-										</div>
-									</div>
-								</div>
-
-							</div>
-
-							<div class="widget subscribe-widget">
-
-								<div class="row col-mb-30">
-									<div class="col-12 col-sm-6">
-										<a href="#" class="social-icon bg-dark h-bg-facebook mb-0 me-3">
-											<i class="fa-brands fa-facebook-f"></i>
-											<i class="fa-brands fa-facebook-f"></i>
-										</a>
-										<a href="#"><small class="d-block text-smaller"><strong>Like us</strong><br>on Facebook</small></a>
-									</div>
-									<div class="col-12 col-sm-6">
-										<a href="#" class="social-icon bg-dark h-bg-rss mb-0 me-3">
-											<i class="fa-solid fa-rss"></i>
-											<i class="fa-solid fa-rss"></i>
-										</a>
-										<a href="#"><small class="d-block text-smaller"><strong>Subscribe</strong><br>to RSS
-												Feeds</small></a>
-									</div>
-								</div>
-
-							</div>
-						</div>
+				<div class="row text-center text-md-start align-items-center py-4">
+					<div class="col-md-8 mb-3 mb-md-0">
+						<p class="mb-1">
+							<i class="bi bi-geo-alt-fill me-2"></i>
+							Ctra de Ronda, Polígono Industrial La Quinta, Naves 4 y 5 - 29670 San Pedro de Alcántara - Málaga
+						</p>
+						<p class="mb-1"><i class="bi bi-telephone me-2"></i> (+34) 952 78 19 97</p>
+						<p class="mb-0"><i class="bi bi-envelope me-2"></i> info@tallereslopezfuertes.com</p>
 					</div>
 
-				</div><!-- .footer-widgets-wrap end -->
+					<div class="col-md-4 text-center text-md-end">
+						<a href="#" class="social-icon"><i class="fa-brands fa-facebook-f"></i></a>
+						<a href="#" class="social-icon"><i class="fa-brands fa-instagram"></i></a>
+						<a href="#" class="social-icon"><i class="fa-brands fa-youtube"></i></a>
+					</div>
+				</div>
+
 			</div>
 
-			<!-- Copyrights
-			============================================= -->
 			<div id="copyrights">
-				<div class="container">
-
-					<div class="row justify-content-between col-mb-30">
-						<div class="col-12 col-md-auto text-center text-md-start">
-							Copyrights &copy; 2023 All Rights Reserved by Canvas Inc.<br>
-							<div class="copyright-links"><a href="#">Terms of Use</a> / <a href="#">Privacy Policy</a></div>
-						</div>
-
-						<div class="col-12 col-md-auto text-center text-md-end">
-							<div class="copyrights-menu copyright-links">
-								<a href="#">Home</a>/<a href="#">About Us</a>/<a href="#">Team</a>/<a href="#">Clients</a>/<a
-									href="#">FAQs</a>/<a href="#">Contact</a>
-							</div>
-						</div>
+				<div class="container d-flex flex-column flex-md-row justify-content-between align-items-center text-center">
+					<div class="mb-2 mb-md-0">
+						© 2023 Talleres López Fuertes - Todos los derechos reservados
 					</div>
-
+					<div>
+						<a href="#">Términos</a> | <a href="#">Política de Privacidad</a>
+					</div>
 				</div>
-			</div><!-- #copyrights end -->
-		</footer><!-- #footer end -->
+			</div>
+		</footer>
+
+		<!-- #footer end -->
 
 	</div><!-- #wrapper end -->
 
