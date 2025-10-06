@@ -43,6 +43,25 @@ a:hover {
   color: #003b6f;
 }
 
+/* Fondo para titulos legibles */
+.page-title-content {
+  background: rgba(0, 0, 0, 0.55); /* fondo oscuro semitransparente */
+  padding: 30px 40px;
+  border-radius: 10px;
+  display: inline-block;
+  color: #fff;
+  max-width: 90%;
+  text-align: center;
+}
+
+/* Ajustes responsivos */
+@media (max-width: 768px) {
+  .page-title-content {
+    padding: 20px;
+    font-size: 15px;
+  }
+}
+
 /* ===== Footer ===== */
 #footer {
   background-color: #003b6f; /* azul corporativo */
