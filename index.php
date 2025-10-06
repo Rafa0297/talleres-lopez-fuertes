@@ -115,7 +115,7 @@
 					<!-- Logo
 					============================================= -->
 					<div id="logo" class="ms-auto ms-lg-0 me-lg-auto">
-						<a href="demo-construction.php">
+						<a href="index.php">
 							<img class="logo-default"
 								srcset="demos/construction/images/logo.png, demos/construction/images/logo@2x.png 2x"
 								src="demos/construction/images/logo@2x.png" alt="Canvas Logo">
@@ -182,7 +182,7 @@
 								<li class="menu-item current"><a class="menu-link" href="index.php">
 										<div>Inicio</div>
 									</a></li>
-								<li class="menu-item"><a class="menu-link" href="demo-construction-about-us.php">
+								<li class="menu-item"><a class="menu-link" href="la-empresa.php">
 										<div>La Empresa</div>
 									</a></li>
 								<li class="menu-item"><a class="menu-link" href="demo-construction-services.php">
