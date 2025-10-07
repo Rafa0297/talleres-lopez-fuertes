@@ -136,16 +136,14 @@
                 <i class="i-plain bi-envelope m-0"></i>
                 <div class="he-text">
                   Envíanos un email
-                  <!-- TODO -->
-                  <!-- <span>info@canvas.com</span> -->
+                  <span class="header-span">info@tallereslopezfuertes.com</span>
                 </div>
               </li>
               <li>
                 <i class="i-plain bi-clock m-0"></i>
                 <div class="he-text">
                   Horario
-                  <span class="header-span">Lunes - Jueves: 8:00 - 14:00 / 15:00 - 18:00</span>
-                  <span class="header-span">Viernes: 8:00 - 14:00</span>
+                  <span class="header-span">L - J: 8:00 - 14:00 / 15:00 - 18:00 / V: 8:00 - 14:00</span>
                 </div>
               </li>
             </ul>
@@ -189,10 +187,10 @@
                     <div>Productos</div>
                   </a>
                   <ul class="sub-menu-container">
-                    <li class="menu-item"><a class="menu-link" href="#">
+                    <li class="menu-item"><a class="menu-link" href="carpinteria-de-aluminio.php">
                         <div>Carpinteria de Aluminio</div>
                       </a></li>
-                    <li class="menu-item"><a class="menu-link" href="#">
+                    <li class="menu-item"><a class="menu-link" href="carpinteria-pvc.php">
                         <div>Carpinteria PVC</div>
                       </a></li>
                     <li class="menu-item"><a class="menu-link" href="#">

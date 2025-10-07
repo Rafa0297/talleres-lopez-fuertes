@@ -137,6 +137,7 @@
                 <div class="he-text">
                   Envíanos un email
                   <span class="header-span">info@tallereslopezfuertes.com</span>
+
                 </div>
               </li>
               <li>
@@ -190,7 +191,7 @@
                     <li class="menu-item"><a class="menu-link" href="carpinteria-de-aluminio.php">
                         <div>Carpinteria de Aluminio</div>
                       </a></li>
-                    <li class="menu-item"><a class="menu-link" href="carpinteria-pvc.php">
+                    <li class="menu-item"><a class="menu-link" href="carpinteria-de-aluminio.php">
                         <div>Carpinteria PVC</div>
                       </a></li>
                     <li class="menu-item"><a class="menu-link" href="#">
@@ -282,141 +283,170 @@
     <!-- #header end 
      ============================================= -->
 
-    <!-- Title of the page -->
-
-    <section class="page-title page-title-parallax parallax scroll-detect dark">
-      <img src="demos/construction/images/slider/3.jpg" class="parallax-bg">
+    <!-- Sección Carpintería de Aluminio -->
+    <section id="carpinteria-aluminio" class="py-5">
       <div class="container">
-        <div class="page-title-row">
 
-          <div class="page-title-content">
-            <h1>Nuestros Productos</h1>
-            <span>Los productos que ofrecemos</span>
+        <!-- Título -->
+        <div class="text-center mb-5">
+          <h2 class="fw-bold text-uppercase" style="color:#003b6f;">Carpintería de PVC</h2>
+          <p class="lead text-muted mx-auto" style="max-width: 700px; text-align: justify">
+            Las ventanas de PVC son la alternativa más económica para las ventanas de su hogar, debido a su precio y
+            mínimo mantenimiento. Tienen un coeficiente de conductividad térmica más bajo y menos condensación, lo que
+            significa que retienen mejor el calor en la habitación.
+          </p>
+        </div>
+
+        <!-- Contenido principal -->
+        <div class="row align-items-center g-5">
+          <!-- Imagen principal -->
+          <div class="col-lg-6">
+            <img src="demos/construction/images/products/pvc/1.jpg" alt="Carpintería de Aluminio"
+              class="img-fluid rounded shadow-sm w-100">
+          </div>
+
+          <!-- Descripción -->
+          <div class="col-lg-6">
+            <h3 class="fw-semibold mb-3">Aislamiento, confort y durabilidad</h3>
+            <p>
+              La carpintería de PVC es una excelente opción para quienes buscan eficiencia energética, confort y bajo
+              mantenimiento.
+              Sus perfiles garantizan un aislamiento térmico y acústico superior, ayudando a mantener una temperatura
+              agradable durante todo el año.
+            </p>
+            <ul class="list-unstyled">
+              <li><i class="fa-solid fa-check text-danger me-2"></i> Gran aislamiento térmico y acústico</li>
+              <li><i class="fa-solid fa-check text-danger me-2"></i> Mantenimiento mínimo y alta resistencia</li>
+              <li><i class="fa-solid fa-check text-danger me-2"></i> Diseño moderno y personalizable</li>
+            </ul>
           </div>
 
         </div>
-      </div>
-    </section><!-- .page-title end -->
 
-    <!-- Content -->
+        <div class="row align-items-center g-5">
+          <!-- Descripción -->
+          <div class="col-lg-6">
+            <p style="text-align: justify;">Podemos decir con seguridad que hoy en día la carpintería de PVC consigue un
+              gran aislamiento térmico y acústico con un atractivo diseño.. <br><br>
+              Por ejemplo, a diferencia de las ventanas y puertas de madera, el PVC no requiere pintura periódica, es
+              resistente a los arañazos y ofrece una eficiencia energética excepcional, es extremadamente duradero y
+              prácticamente no requiere mantenimiento.</p>
 
-    <section id="content">
-      <div class="content-wrap">
-
-        <div class="section header-stick">
-          <h2 class="text-center mb-0 ls-1">Nuestros Productos en Aluminio y PVC:</h2>
-        </div>
-
-        <div class="container">
-
-          <div class="row col-mb-50">
-            <div class="col-sm-6 col-lg-4">
-              <div class="feature-box media-box">
-                <div class="fbox-media">
-                  <img class="rounded" src="demos/construction/images/products/1.jpg" alt="Why choose Us?">
-                </div>
-                <div class="fbox-content px-0">
-                  <h3>Carpintería de aluminio<span class="subtitle">Perfiles de aluminio ligeros, resistentes y
-                      reciclables.</span></h3>
-                  <p>La carpintería de aluminio combina ligereza, resistencia y durabilidad, ofreciendo alta calidad,
-                    reciclabilidad y adaptabilidad para todo tipo de estructuras.</p>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-sm-6 col-lg-4">
-              <div class="feature-box media-box">
-                <div class="fbox-media">
-                  <img class="rounded" src="demos/construction/images/products/2.jpg" alt="Effective Planning">
-                </div>
-                <div class="fbox-content px-0">
-                  <h3>Carpintería de PVC<span class="subtitle">Ventanas PVC económicas, aislantes y duraderas</span>
-                  </h3>
-                  <p>Las ventanas de PVC son la opción más económica por su bajo precio y mínimo mantenimiento,
-                    ofreciendo excelente aislamiento térmico y acústico..</p>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-sm-6 col-lg-4">
-              <div class="feature-box media-box">
-                <div class="fbox-media">
-                  <img class="rounded" src="demos/construction/images/products/3.jpg" alt="Why choose Us?">
-                </div>
-                <div class="fbox-content px-0">
-                  <h3>Cortina de cristales<span class="subtitle">Acristalamientos para vistas y protección total.</span>
-                  </h3>
-                  <p>Los cerramientos de cristal extienden el uso de terrazas y balcones todo el año, ofreciendo vistas
-                    panorámicas, seguridad y protección contra ruido y suciedad.</p>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-sm-6 col-lg-4">
-              <div class="feature-box media-box">
-                <div class="fbox-media">
-                  <img class="rounded" src="demos/construction/images/products/4.jpg" alt="Why choose Us?">
-                </div>
-                <div class="fbox-content px-0">
-                  <h3>Techos de aluminio<span class="subtitle">Durables, modernos, resistentes.</span></h3>
-                  <p>Los techos de aluminio son duraderos, resistentes al fuego y a la temperatura, ideales para diseños
-                    modernos. Ofrecen gran estabilidad y variedad de colores.</p>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-sm-6 col-lg-4">
-              <div class="feature-box media-box">
-                <div class="fbox-media">
-                  <img class="rounded" src="demos/construction/images/products/5.jpg" alt="Effective Planning">
-                </div>
-                <div class="fbox-content px-0">
-                  <h3>Plegables de aluminio<span class="subtitle">Fáciles, herméticos, sin obra</span></h3>
-                  <p>Los cerramientos plegables de aluminio sellan terrazas sin obra, ofreciendo hermeticidad y fácil
-                    limpieza y mantenimiento.</p>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-sm-6 col-lg-4">
-              <div class="feature-box media-box">
-                <div class="fbox-media">
-                  <img class="rounded" src="demos/construction/images/products/6.jpg" alt="Why choose Us?">
-                </div>
-                <div class="fbox-content px-0">
-                  <h3>Mosquiteras.<span class="subtitle">A medida contra insectos.</span></h3>
-                  <p>Nuestras mosquiteras crean una barrera contra insectos. Las fabricamos a medida: enrollables,
-                    plisadas, fijas o correderas, disponibles en varios colores.</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-6 col-lg-4">
-              <div class="feature-box media-box">
-                <div class="fbox-media">
-                  <img class="rounded" src="demos/construction/images/products/7.jpg" alt="Effective Planning">
-                </div>
-                <div class="fbox-content px-0">
-                  <h3>Mamparas de baño.<span class="subtitle">Elegantes, higiénicas y evitan salpicaduras.</span></h3>
-                  <p>Las mamparas de ducha sustituyen las cortinas con una solución elegante e higiénica, mejorando el
-                    diseño y evitando salpicaduras.</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-6 col-lg-4">
-              <div class="feature-box media-box">
-                <div class="fbox-media">
-                  <img class="rounded" src="demos/construction/images/products/8.jpg" alt="Effective Planning">
-                </div>
-                <div class="fbox-content px-0">
-                  <h3>Ventanas para tejados.<span class="subtitle">Luz, ventilación, seguridad y calidad.</span></h3>
-                  <p>Las ventanas para tejados iluminan, ventilan y dan vistas, su instalación es sencilla y ofrecen
-                    calidad, seguridad y eficiencia energética.</p>
-                </div>
-              </div>
-            </div>
+          </div>
+          <!-- Imagen secundaria -->
+          <div class="col-lg-6">
+            <img src="demos/construction/images/products/pvc/2.jpg" alt="Carpintería de Aluminio"
+              class="img-fluid rounded shadow-sm w-100">
           </div>
 
         </div>
+
+        <div style="margin-top: 30px;" class="container">
+
+          <div id="portfolio" class="portfolio row gutter-20">
+
+            <article class="portfolio-item col-12 col-sm-6 col-md-4 pf-media pf-icons">
+              <div class="grid-inner">
+                <div class="portfolio-image">
+                  <img src="demos/construction/images/products/pvc/3.jpg" alt="The Atmosphere">
+                  <div class="bg-overlay">
+                    <div class="bg-overlay-content dark" data-hover-animate="fadeIn">
+                      <a href="demos/construction/images/products/pvc/3.jpg"
+                        class="overlay-trigger-icon bg-light text-dark" data-hover-animate="zoomIn"
+                        data-hover-animate-out="zoomOut" data-hover-speed="350"><i class="uil uil-search-plus"></i></a>
+                    </div>
+                    <div class="bg-overlay-bg dark" data-hover-animate="fadeIn"></div>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <article class="portfolio-item col-12 col-sm-6 col-md-4 pf-illustrations">
+              <div class="grid-inner">
+                <div class="portfolio-image">
+                  <img src="demos/construction/images/products/pvc/4.jpg" alt="Wavelength Structure">
+                  <div class="bg-overlay">
+                    <div class="bg-overlay-content dark" data-hover-animate="fadeIn">
+                      <a href="demos/construction/images/products/pvc/4.jpg"
+                        class="overlay-trigger-icon bg-light text-dark" data-hover-animate="zoomIn"
+                        data-hover-animate-out="zoomOut" data-hover-speed="350"><i class="uil uil-search-plus"></i></a>
+                    </div>
+                    <div class="bg-overlay-bg dark" data-hover-animate="fadeIn"></div>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <article class="portfolio-item col-12 col-sm-6 col-md-4 pf-graphics pf-uielements">
+              <div class="grid-inner">
+                <div class="portfolio-image">
+                  <img src="demos/construction/images/products/pvc/5.jpg" alt="Greenhouse Garden">
+                  <div class="bg-overlay">
+                    <div class="bg-overlay-content dark" data-hover-animate="fadeIn">
+                      <a href="demos/construction/images/products/pvc/5.jpg"
+                        class="overlay-trigger-icon bg-light text-dark" data-hover-animate="zoomIn"
+                        data-hover-animate-out="zoomOut" data-hover-speed="350"><i class="uil uil-search-plus"></i></a>
+                    </div>
+                    <div class="bg-overlay-bg dark" data-hover-animate="fadeIn"></div>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <article class="portfolio-item col-12 col-sm-6 col-md-4 pf-icons pf-illustrations">
+              <div class="grid-inner">
+                <div class="portfolio-image">
+                  <img src="demos/construction/images/products/pvc/6.jpg" alt="Industrial Hub">
+                  <div class="bg-overlay">
+                    <div class="bg-overlay-content dark" data-hover-animate="fadeIn">
+                      <a href="demos/construction/images/products/pvc/6.jpg"
+                        class="overlay-trigger-icon bg-light text-dark" data-hover-animate="zoomIn"
+                        data-hover-animate-out="zoomOut" data-hover-speed="350"><i class="uil uil-search-plus"></i></a>
+                    </div>
+                    <div class="bg-overlay-bg dark" data-hover-animate="fadeIn"></div>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <article class="portfolio-item col-12 col-sm-6 col-md-4 pf-uielements pf-media">
+              <div class="grid-inner">
+                <div class="portfolio-image">
+                  <img src="demos/construction/images/products/pvc/7.jpg" alt="Corporate Headquarters">
+                  <div class="bg-overlay">
+                    <div class="bg-overlay-content dark" data-hover-animate="fadeIn">
+                      <a href="demos/construction/images/products/pvc/7.jpg"
+                        class="overlay-trigger-icon bg-light text-dark" data-hover-animate="zoomIn"
+                        data-hover-animate-out="zoomOut" data-hover-speed="350"><i class="uil uil-search-plus"></i></a>
+                    </div>
+                    <div class="bg-overlay-bg dark" data-hover-animate="fadeIn"></div>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <article class="portfolio-item col-12 col-sm-6 col-md-4 pf-graphics pf-illustrations">
+              <div class="grid-inner">
+                <div class="portfolio-image">
+                  <img src="demos/construction/images/products/pvc/8.jpg" alt="Space Station">
+                  <div class="bg-overlay">
+                    <div class="bg-overlay-content dark" data-hover-animate="fadeIn">
+                      <a href="demos/construction/images/products/pvc/8.jpg"
+                        class="overlay-trigger-icon bg-light text-dark" data-hover-animate="zoomIn"
+                        data-hover-animate-out="zoomOut" data-hover-speed="350"><i class="uil uil-search-plus"></i></a>
+                    </div>
+                    <div class="bg-overlay-bg dark" data-hover-animate="fadeIn"></div>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+
+
+          </div>
+
+        </div>
+
       </div>
     </section>
 
@@ -469,6 +499,65 @@
   ============================================= -->
   <script src="js/plugins.min.js"></script>
   <script src="js/functions.bundle.js"></script>
+
+  <!-- JS para el efecto de imagen en pantalla completa -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      // Selecciona todas las imágenes del portafolio
+      const links = document.querySelectorAll('.portfolio-image a');
+
+      links.forEach(link => {
+        link.addEventListener('click', function (e) {
+          e.preventDefault();
+          const imgSrc = this.getAttribute('href');
+
+          // Crear overlay
+          const overlay = document.createElement('div');
+          overlay.style.position = 'fixed';
+          overlay.style.top = '0';
+          overlay.style.left = '0';
+          overlay.style.width = '100%';
+          overlay.style.height = '100%';
+          overlay.style.background = 'rgba(0, 0, 0, 0.8)';
+          overlay.style.display = 'flex';
+          overlay.style.alignItems = 'center';
+          overlay.style.justifyContent = 'center';
+          overlay.style.zIndex = '9999';
+
+          // Crear imagen
+          const img = document.createElement('img');
+          img.src = imgSrc;
+          img.style.maxWidth = '90%';
+          img.style.maxHeight = '90%';
+          img.style.borderRadius = '8px';
+          img.style.boxShadow = '0 0 20px rgba(0,0,0,0.6)';
+
+          // Crear botón X
+          const closeBtn = document.createElement('span');
+          closeBtn.innerHTML = '&times;';
+          closeBtn.style.position = 'absolute';
+          closeBtn.style.top = '20px';
+          closeBtn.style.right = '30px';
+          closeBtn.style.fontSize = '40px';
+          closeBtn.style.color = '#fff';
+          closeBtn.style.cursor = 'pointer';
+          closeBtn.style.fontWeight = 'bold';
+
+          // Cerrar al hacer click fuera o en la X
+          overlay.addEventListener('click', function (e) {
+            if (e.target === overlay || e.target === closeBtn) {
+              overlay.remove();
+            }
+          });
+
+          // Insertar elementos
+          overlay.appendChild(img);
+          overlay.appendChild(closeBtn);
+          document.body.appendChild(overlay);
+        });
+      });
+    });
+  </script>
 
 </body>
 
