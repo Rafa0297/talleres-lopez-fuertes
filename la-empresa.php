@@ -66,16 +66,21 @@
             <!-- Top Social
             ============================================= -->
             <ul id="top-social">
-              <li><a href="#" class="h-bg-facebook"><span class="ts-icon"><i
-                      class="fa-brands fa-facebook-f"></i></span><span class="ts-text">Facebook</span></a></li>
-              <li><a href="#" class="h-bg-x-twitter"><span class="ts-icon"><i
-                      class="fa-brands fa-x-twitter"></i></span><span class="ts-text">Twitter</span></a></li>
+              <li><a href="https://www.facebook.com/tallereslopezfuertes1974/" target="_blank"
+                  class="h-bg-facebook"><span class="ts-icon"><i class="fa-brands fa-facebook-f"></i></span><span
+                    class="ts-text">Facebook</span></a></li>
+              <li><a href="https://twitter.com/tallereslopezf1" target="_blank" class="h-bg-x-twitter"><span
+                    class="ts-icon"><i class="fa-brands fa-x-twitter"></i></span><span
+                    class="ts-text">Twitter</span></a></li>
 
-              <li><a href="#" class="h-bg-instagram"><span class="ts-icon"><i
-                      class="fa-brands fa-instagram"></i></span><span class="ts-text">Instagram</span></a></li>
+              <li><a href="https://www.instagram.com/tallereslopezfuertes/?hl=es" target="_blank"
+                  class="h-bg-instagram"><span class="ts-icon"><i class="fa-brands fa-instagram"></i></span><span
+                    class="ts-text">Instagram</span></a></li>
 
-              <li><a href="#" class="h-bg-youtube"><span class="ts-icon"><i
-                      class="fa-brands fa-youtube"></i></span><span class="ts-text">Youtube</span></a></li>
+              <li><a href="https://www.youtube.com/channel/UCEp-tXYXiqZGpNqEjumlTHQ" target="_blank"
+                  class="h-bg-youtube"><span class="ts-icon"><i class="fa-brands fa-youtube"></i></span><span
+                    class="ts-text">Youtube</span></a>
+              </li>
             </ul><!-- #top-social end -->
 
           </div>
@@ -136,16 +141,14 @@
                 <i class="i-plain bi-envelope m-0"></i>
                 <div class="he-text">
                   Envíanos un email
-                  <!-- TODO -->
-                  <!-- <span>info@canvas.com</span> -->
+                  <span class="header-span">info@tallereslopezfuertes.com</span>
                 </div>
               </li>
               <li>
                 <i class="i-plain bi-clock m-0"></i>
                 <div class="he-text">
                   Horario
-                  <span class="header-span">Lunes - Jueves: 8:00 - 14:00 / 15:00 - 18:00</span>
-                  <span class="header-span">Viernes: 8:00 - 14:00</span>
+                  <span class="header-span">L - J: 8:00 - 14:00 / 15:00 - 18:00 / V: 8:00 - 14:00</span>
                 </div>
               </li>
             </ul>
@@ -185,86 +188,83 @@
                 <li class="menu-item"><a class="menu-link" href="la-empresa.php">
                     <div>La Empresa</div>
                   </a></li>
-                <li class="menu-item"><a class="menu-link" href="demo-construction-services.php">
+                <li class="menu-item"><a class="menu-link" href="productos.php">
                     <div>Productos</div>
                   </a>
                   <ul class="sub-menu-container">
-                    <li class="menu-item"><a class="menu-link" href="#">
+                    <li class="menu-item"><a class="menu-link" href="carpinteria-de-aluminio.php">
                         <div>Carpinteria de Aluminio</div>
                       </a></li>
-                    <li class="menu-item"><a class="menu-link" href="#">
+                    <li class="menu-item"><a class="menu-link" href="carpinteria-pvc.php">
                         <div>Carpinteria PVC</div>
                       </a></li>
-                    <li class="menu-item"><a class="menu-link" href="#">
+                    <li class="menu-item"><a class="menu-link" href="cortina-de-cristales.php">
                         <div>Cortina de Cristales</div>
                       </a></li>
-                    <li class="menu-item"><a class="menu-link" href="#">
+                    <li class="menu-item"><a class="menu-link" href="techos-de-aluminio.php">
                         <div>Techos de Aluminio</div>
                       </a></li>
-                    <li class="menu-item"><a class="menu-link" href="#">
+                    <li class="menu-item"><a class="menu-link" href="plegables-de-aluminio.php">
                         <div>Plegables de Aluminio</div>
                       </a></li>
-                    <li class="menu-item"><a class="menu-link" href="#">
+                    <li class="menu-item"><a class="menu-link" href="persianas.php">
                         <div>Persianas</div>
                       </a></li>
-                    <li class="menu-item"><a class="menu-link" href="#">
-                        <div>Persianas</div>
-                      </a></li>
-                    <li class="menu-item"><a class="menu-link" href="#">
+                    <li class="menu-item"><a class="menu-link" href="mosquiteras.php">
                         <div>Mosquiteras</div>
                       </a></li>
-                    <li class="menu-item"><a class="menu-link" href="#">
+                    <li class="menu-item"><a class="menu-link" href="mamparas-de-bano.php">
                         <div>Mamparas de Baño</div>
                       </a></li>
-                    <li class="menu-item"><a class="menu-link" href="#">
+                    <li class="menu-item"><a class="menu-link" href="ventanas-para-tejados.php">
                         <div>Ventanas para tejados</div>
                       </a></li>
                   </ul>
                 </li>
 
-                <li class="menu-item"><a class="menu-link" href="demo-construction-projects.php">
+                <li class="menu-item"><a class="menu-link" href="obras-finalizadas.php">
                     <div>Obras Finalizadas</div>
                   </a>
                   <ul class="sub-menu-container">
-                    <li class="menu-item"><a class="menu-link" href="demo-construction-projects-2.php">
+                    <li class="menu-item"><a class="menu-link" href="villa-el-capitan.php">
                         <div>Villa El Capitan</div>
                       </a></li>
-                    <li class="menu-item"><a class="menu-link" href="demo-construction-projects-3.php">
+                    <li class="menu-item"><a class="menu-link" href="villa-la-perla.php">
                         <div>Villa La Perla</div>
                       </a></li>
-                    <li class="menu-item"><a class="menu-link" href="demo-construction-projects.php">
+                    <li class="menu-item"><a class="menu-link" href="villa-la-quinta.php">
                         <div>Villa La Quinta</div>
                       </a></li>
-                    <li class="menu-item"><a class="menu-link" href="demo-construction-projects-5.php">
+                    <li class="menu-item"><a class="menu-link" href="villa-los-jaralillos.php">
                         <div>Villa Los Jaralillos</div>
                       </a></li>
-                    <li class="menu-item"><a class="menu-link" href="demo-construction-projects-5.php">
+                    <li class="menu-item"><a class="menu-link" href="villa-el-rosario.php">
                         <div>Villa El Rosario</div>
                       </a></li>
-                    <li class="menu-item"><a class="menu-link" href="demo-construction-projects-5.php">
+                    <li class="menu-item"><a class="menu-link" href="villa-en-el-paraiso.php">
                         <div>Villa En El Paraiso</div>
                       </a></li>
-                    <li class="menu-item"><a class="menu-link" href="demo-construction-projects-5.php">
+                    <li class="menu-item"><a class="menu-link" href="villa-en-los-naranjos.php">
                         <div>Villa en Los Naranjos</div>
                       </a></li>
-                    <li class="menu-item"><a class="menu-link" href="demo-construction-projects-5.php">
+                    <li class="menu-item"><a class="menu-link" href="apartamento-gray-dalbion.php">
                         <div>Apartamento Gray D'Albion</div>
                       </a></li>
-                    <li class="menu-item"><a class="menu-link" href="demo-construction-projects-5.php">
+                    <li class="menu-item"><a class="menu-link" href="urbanizacion-casa-blanca.php">
                         <div>Urbanizacion Casa Blanca</div>
                       </a></li>
-                    <li class="menu-item"><a class="menu-link" href="demo-construction-projects-5.php">
+                    <li class="menu-item"><a class="menu-link" href="restaurante-casa-di-sergio.php">
                         <div>Restaurante Casa Di Sergio</div>
                       </a></li>
-                    <li class="menu-item"><a class="menu-link" href="demo-construction-projects-5.php">
+                    <li class="menu-item"><a class="menu-link" href="hotel-malaga.php">
                         <div>Hotel Málaga</div>
                       </a></li>
-                    <li class="menu-item"><a class="menu-link" href="demo-construction-projects-5.php">
+                    <li class="menu-item"><a class="menu-link" href="tanatorio-san-pedro-de-alcantara.php">
                         <div>Tanatorio San Pedro de Alcántara</div>
                       </a></li>
                   </ul>
                 </li>
-                <li class="menu-item"><a class="menu-link" href="demo-construction-contact.php">
+                <li class="menu-item"><a class="menu-link" href="contacto.php">
                     <div>Contacto</div>
                   </a></li>
               </ul>

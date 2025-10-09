@@ -43,6 +43,25 @@ a:hover {
   color: #003b6f;
 }
 
+/* Fondo para titulos legibles */
+.page-title-content {
+  background: rgba(0, 0, 0, 0.55); /* fondo oscuro semitransparente */
+  padding: 30px 40px;
+  border-radius: 10px;
+  display: inline-block;
+  color: #fff;
+  max-width: 90%;
+  text-align: center;
+}
+
+/* Ajustes responsivos */
+@media (max-width: 768px) {
+  .page-title-content {
+    padding: 20px;
+    font-size: 15px;
+  }
+}
+
 /* ===== Footer ===== */
 #footer {
   background-color: #003b6f; /* azul corporativo */
@@ -132,4 +151,101 @@ a:hover {
   #footer .row > div:last-child {
     text-align: right;
   }
+}
+
+#carpinteria-aluminio img {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#carpinteria-aluminio img:hover {
+  transform: scale(1.03);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+#carpinteria-aluminio h2 {
+  font-size: 2rem;
+}
+
+@media (max-width: 768px) {
+  #carpinteria-aluminio h2 {
+    font-size: 1.6rem;
+  }
+}
+
+/* Mantener los top-links y top-social en la misma fila en móviles */
+#top-bar .row {
+  flex-wrap: nowrap !important;
+  align-items: center;
+}
+
+/* Ajustar los contenidos para que no se salgan */
+#top-bar .col-12 {
+  flex: 1 1 auto;
+  width: auto !important;
+  max-width: 100%;
+}
+
+/* Ocultar texto en móviles si ya lo hiciste antes */
+@media (max-width: 991px) {
+  .top-links-item a {
+    font-size: 0;
+  }
+
+  .top-links-item a i {
+    font-size: 18px;
+    margin-right: 0;
+  }
+
+  /* Espaciado entre iconos */
+  #top-social li,
+  .top-links-item {
+    margin-right: 8px;
+  }
+
+  /* Centrar todo si lo prefieres */
+  #top-bar .row {
+    justify-content: center;
+    gap: 12px;
+  }
+}
+
+/* Mantener top-links en una sola línea */
+#top-bar .top-links-container {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  overflow: hidden; /* Evita saltos de línea */
+}
+
+/* Asegurar que los enlaces no se rompan */
+#top-bar .top-links-item a {
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+}
+
+/* Ajustar iconos y ocultar texto en móvil */
+@media (max-width: 991px) {
+  #top-bar .top-links-container {
+    justify-content: center; /* Centra los iconos en móvil */
+  }
+
+  #top-bar .top-links-item a {
+    font-size: 0; /* Oculta el texto */
+  }
+
+  #top-bar .top-links-item a i {
+    font-size: 14px;
+    margin-right: 0;
+  }
+}
+
+/* Estilos para el efecto de zoom en las imágenes de productos */
+.feature-box .fbox-media img.clickable-product-image {
+    transition: transform 0.3s ease-in-out; /* Define una transición suave */
+    will-change: transform; /* Optimización para navegadores */
+}
+
+.feature-box .fbox-media img.clickable-product-image:hover {
+    transform: scale(1.05); /* Escala la imagen al 105% de su tamaño original */
 }
