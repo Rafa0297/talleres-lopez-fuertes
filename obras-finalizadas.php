@@ -3,68 +3,55 @@
 
 <head>
 
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="x-ua-compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- SEO Básico -->
-    <title>Talleres López Fuertes | Carpintería de Aluminio y PVC en Marbella</title>
-    <meta name="description"
-      content="Talleres López Fuertes es especialista en carpintería de aluminio, PVC, persianas, cortinas de cristal y mamparas en Marbella y la Costa del Sol. Calidad y diseño a medida.">
-    <meta name="author" content="Talleres López Fuertes">
+  <title>Talleres López Fuertes | Carpintería de Aluminio y PVC en Marbella</title>
+  <meta name="description"
+    content="Talleres López Fuertes es especialista en carpintería de aluminio, PVC, persianas, cortinas de cristal y mamparas en Marbella y la Costa del Sol. Calidad y diseño a medida.">
+  <meta name="author" content="Talleres López Fuertes">
 
-    <!-- Icono del sitio -->
-    <link rel="icon" href="demos/construction/images/icons/favicon32.png" type="image/png">
+  <link rel="icon" href="demos/construction/images/icons/favicon32.png" type="image/png">
 
-    <!-- Open Graph (para Facebook, LinkedIn, WhatsApp) -->
-    <meta property="og:title" content="Talleres López Fuertes | Carpintería de Aluminio y PVC en Marbella">
-    <meta property="og:description"
-      content="Especialistas en carpintería de aluminio, PVC y cerramientos. Calidad, diseño y soluciones a medida en la Costa del Sol.">
-    <meta property="og:image" content="https://tallereslopezfuertes.icomdi.com/demos/construction/images/slider/1.jpg">
-    <meta property="og:url" content="https://tallereslopezfuertes.icomdi.com">
-    <meta property="og:type" content="website">
+  <meta property="og:title" content="Talleres López Fuertes | Carpintería de Aluminio y PVC en Marbella">
+  <meta property="og:description"
+    content="Especialistas en carpintería de aluminio, PVC y cerramientos. Calidad, diseño y soluciones a medida en la Costa del Sol.">
+  <meta property="og:image" content="https://tallereslopezfuertes.icomdi.com/demos/construction/images/slider/1.jpg">
+  <meta property="og:url" content="https://tallereslopezfuertes.icomdi.com">
+  <meta property="og:type" content="website">
 
-    <!-- Twitter Card -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Talleres López Fuertes | Carpintería de Aluminio y PVC en Marbella">
-    <meta name="twitter:description" content="Carpintería de aluminio, PVC, persianas y cerramientos en Marbella.">
-    <meta name="twitter:image" content="https://tallereslopezfuertes.icomdi.com/demos/construction/images/slider/1.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Talleres López Fuertes | Carpintería de Aluminio y PVC en Marbella">
+  <meta name="twitter:description" content="Carpintería de aluminio, PVC, persianas y cerramientos en Marbella.">
+  <meta name="twitter:image" content="https://tallereslopezfuertes.icomdi.com/demos/construction/images/slider/1.jpg">
 
-    <!-- Fuentes -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Source+Sans+Pro:wght@300;400;600;700&display=swap"
-      rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Source+Sans+Pro:wght@300;400;600;700&display=swap"
+    rel="stylesheet">
 
-    <!-- CSS -->
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="css/font-icons.css">
-    <link rel="stylesheet" href="css/swiper.css">
-    <link rel="stylesheet" href="demos/construction/construction.css">
-    <link rel="stylesheet" href="css/custom.css">
-  </head>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="css/font-icons.css">
+  <link rel="stylesheet" href="css/swiper.css">
+  <link rel="stylesheet" href="demos/construction/construction.css">
+  <link rel="stylesheet" href="css/custom.css">
+</head>
 
 
 </head>
 
 <body class="stretched">
 
-  <!-- Document Wrapper
-  ============================================= -->
   <div id="wrapper">
 
-    <!-- Top Bar
-    ============================================= -->
     <div id="top-bar">
       <div class="container">
 
         <div class="row justify-content-between">
           <div class="col-12 col-md-auto">
 
-            <!-- Top Social
-            ============================================= -->
             <ul id="top-social">
               <li><a href="https://www.facebook.com/tallereslopezfuertes1974/" target="_blank"
                   class="h-bg-facebook"><span class="ts-icon"><i class="fa-brands fa-facebook-f"></i></span><span
@@ -81,14 +68,11 @@
                   class="h-bg-youtube"><span class="ts-icon"><i class="fa-brands fa-youtube"></i></span><span
                     class="ts-text">Youtube</span></a>
               </li>
-            </ul><!-- #top-social end -->
-
+            </ul>
           </div>
 
           <div class="col-12 col-md-auto">
 
-            <!-- Top Links
-            ============================================= -->
             <div class="top-links">
               <ul class="top-links-container">
                 <li class="top-links-item">
@@ -103,30 +87,23 @@
                   </a>
                 </li>
               </ul>
-            </div><!-- .top-links end -->
-
+            </div>
           </div>
         </div>
 
       </div>
-    </div><!-- #top-bar end -->
-
-    <!-- Header
-    ============================================= -->
+    </div>
     <header id="header" class="header-size-sm" data-sticky-shrink="false">
       <div class="container">
         <div class="header-row">
 
-          <!-- Logo
-          ============================================= -->
           <div id="logo" class="ms-auto ms-lg-0 me-lg-auto">
             <a href="index.php">
               <img class="logo-default"
                 srcset="demos/construction/images/logo.png, demos/construction/images/logo@2x.png 2x"
                 src="demos/construction/images/logo@2x.png" alt="Canvas Logo">
             </a>
-          </div><!-- #logo end -->
-
+          </div>
           <div class="header-misc d-none d-lg-flex">
 
             <ul class="header-extras">
@@ -163,12 +140,9 @@
 
             <div class="header-misc">
 
-              <!-- Top Search
-              ============================================= -->
               <div id="top-search" class="header-misc-icon">
                 <a href="#" id="top-search-trigger"><i class="uil uil-search"></i><i class="bi-x-lg"></i></a>
-              </div><!-- #top-search end -->
-
+              </div>
             </div>
 
             <div class="primary-menu-trigger">
@@ -177,8 +151,6 @@
               </button>
             </div>
 
-            <!-- Primary Navigation
-            ============================================= -->
             <nav class="primary-menu with-arrows">
 
               <ul class="menu-container">
@@ -269,8 +241,7 @@
                   </a></li>
               </ul>
 
-            </nav><!-- #primary-menu end -->
-
+            </nav>
             <form class="top-search-form" action="search.php" method="get">
               <input type="text" name="q" class="form-control" value="" placeholder="Escribe y pulsa enter"
                 autocomplete="off">
@@ -281,13 +252,193 @@
       </div>
       <div class="header-wrap-clone"></div>
     </header>
-    <!-- #header end 
-     ============================================= -->
+    <section class="page-title page-title-parallax parallax scroll-detect dark">
+      <img src="demos/construction/images/slider/5.webp" class="parallax-bg">
+      <div class="container">
+        <div class="page-title-row">
+
+          <div class="page-title-content">
+            <h1>Obras Finalizadas</h1>
+            <span>Los proyectos que hemos completado</span>
+          </div>
+
+        </div>
+      </div>
+    </section>
+    <section id="content">
+      <div class="content-wrap">
+
+        <div class="section header-stick">
+          <h2 class="text-center mb-0 ls-1">Nuestros proyectos finalizados:</h2>
+        </div>
+
+        <div class="container">
+
+          <div class="row col-mb-50">
+            <div class="col-sm-6 col-lg-4">
+              <div class="feature-box media-box portfolio-image">
+                <div class="fbox-media">
+                  <img class="rounded clickable-product-image" src="demos/construction/images/projects/1.jpg"
+                    alt="Carpintería de aluminio" data-full-src="demos/construction/images/projects/1.jpg">
+                </div>
+                <div class="fbox-content px-0">
+                  <h3>Villa el capitan</h3>
+                  <a href="villa-el-capitan.php" class="more-link">Ver más <i class="bi-arrow-right"></i></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-6 col-lg-4">
+              <div class="feature-box media-box portfolio-image">
+                <div class="fbox-media">
+                  <img class="rounded clickable-product-image" src="demos/construction/images/projects/2.jpg"
+                    alt="Carpintería de aluminio" data-full-src="demos/construction/images/projects/2.jpg">
+                </div>
+                <div class="fbox-content px-0">
+                  <h3>Villa la perla</h3>
+                  <a href="villa-la-perla.php" class="more-link">Ver más <i class="bi-arrow-right"></i></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-6 col-lg-4">
+              <div class="feature-box media-box portfolio-image">
+                <div class="fbox-media">
+                  <img class="rounded clickable-product-image" src="demos/construction/images/projects/3.jpg"
+                    alt="Carpintería de aluminio" data-full-src="demos/construction/images/projects/3.jpg">
+                </div>
+                <div class="fbox-content px-0">
+                  <h3>Villa la quinta</h3>
+                  <a href="villa-la-quinta.php" class="more-link">Ver más <i class="bi-arrow-right"></i></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-6 col-lg-4">
+              <div class="feature-box media-box portfolio-image">
+                <div class="fbox-media">
+                  <img class="rounded clickable-product-image" src="demos/construction/images/projects/4.jpg"
+                    alt="Carpintería de aluminio" data-full-src="demos/construction/images/projects/4.jpg">
+                </div>
+                <div class="fbox-content px-0">
+                  <h3>Villa los jaralillos</h3>
+                  <a href="villa-los-jaralillos.php" class="more-link">Ver más <i class="bi-arrow-right"></i></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-6 col-lg-4">
+              <div class="feature-box media-box portfolio-image">
+                <div class="fbox-media">
+                  <img class="rounded clickable-product-image" src="demos/construction/images/projects/5.jpg"
+                    alt="Carpintería de aluminio" data-full-src="demos/construction/images/projects/5.jpg">
+                </div>
+                <div class="fbox-content px-0">
+                  <h3>Villa el rosario</h3>
+                  <a href="villa-el-rosario.php" class="more-link">Ver más <i class="bi-arrow-right"></i></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-6 col-lg-4">
+              <div class="feature-box media-box portfolio-image">
+                <div class="fbox-media">
+                  <img class="rounded clickable-product-image" src="demos/construction/images/projects/6.jpg"
+                    alt="Carpintería de aluminio" data-full-src="demos/construction/images/projects/6.jpg">
+                </div>
+                <div class="fbox-content px-0">
+                  <h3>Villa en el paraiso</h3>
+                  <a href="villa-en-el-paraiso.php" class="more-link">Ver más <i class="bi-arrow-right"></i></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-6 col-lg-4">
+              <div class="feature-box media-box portfolio-image">
+                <div class="fbox-media">
+                  <img class="rounded clickable-product-image" src="demos/construction/images/projects/7.jpg"
+                    alt="Carpintería de aluminio" data-full-src="demos/construction/images/projects/7.jpg">
+                </div>
+                <div class="fbox-content px-0">
+                  <h3>Villa en los Naranjos</h3>
+                  <a href="villa-en-los-naranjos.php" class="more-link">Ver más <i class="bi-arrow-right"></i></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-6 col-lg-4">
+              <div class="feature-box media-box portfolio-image">
+                <div class="fbox-media">
+                  <img class="rounded clickable-product-image" src="demos/construction/images/projects/8.jpg"
+                    alt="Carpintería de aluminio" data-full-src="demos/construction/images/projects/8.jpg">
+                </div>
+                <div class="fbox-content px-0">
+                  <h3>Apartamento Gray D'Albion</h3>
+                  <a href="apartamento-gray-dalbion.php" class="more-link">Ver más <i class="bi-arrow-right"></i></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-6 col-lg-4">
+              <div class="feature-box media-box portfolio-image">
+                <div class="fbox-media">
+                  <img class="rounded clickable-product-image" src="demos/construction/images/projects/9.jpg"
+                    alt="Carpintería de aluminio" data-full-src="demos/construction/images/projects/9.jpg">
+                </div>
+                <div class="fbox-content px-0">
+                  <h3>Urbanizacion Casa Blanca</h3>
+                  <a href="urbanizacion-casa-blanca.php" class="more-link">Ver más <i class="bi-arrow-right"></i></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-6 col-lg-4">
+              <div class="feature-box media-box portfolio-image">
+                <div class="fbox-media">
+                  <img class="rounded clickable-product-image" src="demos/construction/images/projects/10.jpg"
+                    alt="Carpintería de aluminio" data-full-src="demos/construction/images/projects/10.jpg">
+                </div>
+                <div class="fbox-content px-0">
+                  <h3>Restaurante Casa Di Sergio</h3>
+                  <a href="restaurante-casa-di-sergio.php" class="more-link">Ver más <i class="bi-arrow-right"></i></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-6 col-lg-4">
+              <div class="feature-box media-box portfolio-image">
+                <div class="fbox-media">
+                  <img class="rounded clickable-product-image" src="demos/construction/images/projects/11.jpg"
+                    alt="Carpintería de aluminio" data-full-src="demos/construction/images/projects/11.jpg">
+                </div>
+                <div class="fbox-content px-0">
+                  <h3>Hotel Málaga</h3>
+                  <a href="hotel-malaga.php" class="more-link">Ver más <i class="bi-arrow-right"></i></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-6 col-lg-4">
+              <div class="feature-box media-box portfolio-image">
+                <div class="fbox-media">
+                  <img class="rounded clickable-product-image" src="demos/construction/images/projects/12.jpg"
+                    alt="Carpintería de aluminio" data-full-src="demos/construction/images/projects/12.jpg">
+                </div>
+                <div class="fbox-content px-0">
+                  <h3>Tanatorio San Pedro de Alcántara</h3>
+                  <a href="tanatorio-san-pedro-de-alcantara.php" class="more-link">Ver más <i
+                      class="bi-arrow-right"></i></a>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+    </section>
 
 
-
-    <!-- Footer
-    ============================================= -->
     <footer id="footer" class="dark">
       <div class="container">
 
@@ -322,18 +473,75 @@
       </div>
     </footer>
 
-    <!-- #footer end -->
-
-  </div><!-- #wrapper end -->
-
-  <!-- Go To Top
-  ============================================= -->
+  </div>
   <div id="gotoTop" class="uil uil-angle-up"></div>
 
-  <!-- JavaScripts
-  ============================================= -->
   <script src="js/plugins.min.js"></script>
   <script src="js/functions.bundle.js"></script>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      // Selecciona todas las imágenes con la clase 'clickable-product-image'
+      const images = document.querySelectorAll('.clickable-product-image');
+
+      images.forEach(img => {
+        // Mejora la experiencia visual indicando que la imagen es clicable
+        img.style.cursor = 'pointer';
+
+        img.addEventListener('click', function (e) {
+          e.preventDefault();
+
+          // Obtiene la URL de la imagen grande desde el atributo 'data-full-src'
+          const imgSrc = this.getAttribute('data-full-src');
+
+          // Crear overlay (Modal)
+          const overlay = document.createElement('div');
+          overlay.style.position = 'fixed';
+          overlay.style.top = '0';
+          overlay.style.left = '0';
+          overlay.style.width = '100%';
+          overlay.style.height = '100%';
+          overlay.style.background = 'rgba(0, 0, 0, 0.8)';
+          overlay.style.display = 'flex';
+          overlay.style.alignItems = 'center';
+          overlay.style.justifyContent = 'center';
+          overlay.style.zIndex = '9999';
+
+          // Crear imagen
+          const modalImg = document.createElement('img');
+          modalImg.src = imgSrc;
+          modalImg.style.maxWidth = '90%';
+          modalImg.style.maxHeight = '90%';
+          modalImg.style.borderRadius = '8px';
+          modalImg.style.boxShadow = '0 0 20px rgba(0,0,0,0.6)';
+
+          // Crear botón X
+          const closeBtn = document.createElement('span');
+          closeBtn.innerHTML = '&times;';
+          closeBtn.style.position = 'absolute';
+          closeBtn.style.top = '20px';
+          closeBtn.style.right = '30px';
+          closeBtn.style.fontSize = '40px';
+          closeBtn.style.color = '#fff';
+          closeBtn.style.cursor = 'pointer';
+          closeBtn.style.fontWeight = 'bold';
+
+          // Cerrar al hacer click fuera o en la X
+          overlay.addEventListener('click', function (e) {
+            // Comprueba si el click fue en el overlay mismo o en el botón 'X'
+            if (e.target === overlay || e.target === closeBtn) {
+              overlay.remove();
+            }
+          });
+
+          // Insertar elementos
+          overlay.appendChild(modalImg);
+          overlay.appendChild(closeBtn);
+          document.body.appendChild(overlay);
+        });
+      });
+    });
+  </script>
 
 </body>
 
