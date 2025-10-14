@@ -1,473 +1,147 @@
 <?php
-
-/*-------------------------------------------------
-
-	Form Processor Plugin
-	by SemiColonWeb
-
----------------------------------------------------*/
-
-
-/*-------------------------------------------------
-	PHPMailer Initialization
----------------------------------------------------*/
+// Incluir las clases de PHPMailer
+// Asegúrate de que esta ruta sea correcta en tu servidor
 
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
+use PHPMailer\PHPMailer\SMTP;
 
 require 'phpmailer/src/Exception.php';
 require 'phpmailer/src/PHPMailer.php';
 require 'phpmailer/src/SMTP.php';
 
-
-/*-------------------------------------------------
-	Receiver's Email
----------------------------------------------------*/
-
-$toemails = array();
-
-$toemails[] = array(
-	'email' => 'your-email@website.com', // Your Email Address
-	'name' => 'Your Name' // Your Name
-);
+// Definir los datos de la cuenta de Gmail/SMTP
+// **ATENCIÓN: Reemplaza estos valores con tu Contraseña de Aplicación y tu correo**
+define('SMTP_USER', 'infotallereslopezfuertes@gmail.com');
+define('SMTP_PASS', 'rhlf irky dqca hbbo');
+define('DESTINATION_EMAIL', 'infotallereslopezfuertes@gmail.com');
+define('SITE_NAME', 'Talleres López Fuertes');
 
 
-/*-------------------------------------------------
-	Sender's Email
----------------------------------------------------*/
+// Función para enviar correos usando SMTP de Gmail
+function sendEmail($to, $subject, $body, $is_html = true)
+{
+	$mail = new PHPMailer(true);
+	try {
+		// Configuración del Servidor SMTP (Gmail)
+		// $mail->SMTPDebug = SMTP::DEBUG_SERVER;
+		$mail->isSMTP();
+		$mail->Host = 'smtp.gmail.com';
+		$mail->SMTPAuth = true;
+		$mail->Username = SMTP_USER;
+		$mail->Password = SMTP_PASS;
+		$mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS; // Usar SMTPS
+		$mail->Port = 465;
 
-$fromemail = array(
-	'email' => 'no-reply@website.com', // Company's Email Address (preferably currently used Domain Name)
-	'name' => 'Company Name' // Company Name
-);
+		// Configuración de Envío
+		$mail->setFrom(SMTP_USER, SITE_NAME);
+		$mail->addAddress($to);
+		$mail->isHTML($is_html);
+		$mail->Subject = $subject;
+		$mail->Body = $body;
+		$mail->CharSet = 'UTF-8';
 
-
-/*-------------------------------------------------
-	reCaptcha
----------------------------------------------------*/
-
-// Add this only if you use reCaptcha with your Contact Forms
-$recaptcha_secret = ''; // Your reCaptcha Secret
-
-
-/*-------------------------------------------------
-	hCaptcha
----------------------------------------------------*/
-
-// Add this only if you use hCaptcha with your Contact Forms
-$hcaptcha_secret = ''; // Your hCaptcha Secret
-
-
-/*-------------------------------------------------
-	PHPMailer Initialization
----------------------------------------------------*/
-
-$mail = new PHPMailer();
-
-/* Add your SMTP Codes after this Line */
-
-
-// End of SMTP
-
-
-/*-------------------------------------------------
-	Form Messages
----------------------------------------------------*/
-
-$message = array(
-	'success'			=> 'We have <strong>successfully</strong> received your Message and will get Back to you as soon as possible.',
-	'error'				=> 'Email <strong>could not</strong> be sent due to some Unexpected Error. Please Try Again later.',
-	'error_bot'			=> 'Bot Detected! Form could not be processed! Please Try Again!',
-	'error_unexpected'	=> 'An <strong>unexpected error</strong> occured. Please Try Again later.',
-	'captcha_invalid'	=> 'Captcha not Validated! Please Try Again!',
-	'captcha_error'		=> 'Captcha not Submitted! Please Try Again.'
-);
-
-
-/*-------------------------------------------------
-	SPAM Protection Settings
----------------------------------------------------*/
-
-$spam_keywords = array(
-	'viagra',
-	'cialis',
-	'levitra'
-);
-
-$allowed_urls = 1;
-
-
-/*-------------------------------------------------
-	Form Processor
----------------------------------------------------*/
-
-if( $_SERVER['REQUEST_METHOD'] == 'POST' ) {
-
-	$prefix		= !empty( $_POST['prefix'] ) ? $_POST['prefix'] : '';
-	$submits	= $_POST;
-	$botpassed	= false;
-
-
-	$message_form					= !empty( $submits['message'] ) ? $submits['message'] : array();
-	$message['success']				= !empty( $message_form['success'] ) ? $message_form['success'] : $message['success'];
-	$message['error']				= !empty( $message_form['error'] ) ? $message_form['error'] : $message['error'];
-	$message['error_bot']			= !empty( $message_form['error_bot'] ) ? $message_form['error_bot'] : $message['error_bot'];
-	$message['error_unexpected']	= !empty( $message_form['error_unexpected'] ) ? $message_form['error_unexpected'] : $message['error_unexpected'];
-	$message['captcha_invalid']	= !empty( $message_form['captcha_invalid'] ) ? $message_form['captcha_invalid'] : $message['captcha_invalid'];
-	$message['captcha_error']		= !empty( $message_form['captcha_error'] ) ? $message_form['captcha_error'] : $message['captcha_error'];
-
-
-	/*-------------------------------------------------
-		Bot Protection
-	---------------------------------------------------*/
-
-	if( isset( $submits[ $prefix . 'botcheck' ] ) ) {
-		$botpassed = true;
+		return $mail->send(); // Retorna true si se envía correctamente
+	} catch (Exception $e) {
+		// En caso de error, puedes registrarlo o devolver un mensaje de error
+		error_log("Error al enviar correo a {$to}: {$mail->ErrorInfo}");
+		return false;
 	}
+}
 
-	if( !empty( $submits[ $prefix . 'botcheck' ] ) ) {
-		$botpassed = false;
-	}
-
-	if( $botpassed == false ) {
-		echo '{ "alert": "error", "message": "' . $message['error_bot'] . '" }';
+// ===========================================
+// 1. Procesar los datos del formulario
+// ===========================================
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+	// ⚠️ Validación básica contra bots (campo oculto)
+	if (!empty($_POST['contact-botcheck'])) {
+		echo json_encode(['status' => 'error', 'message' => '¡Error de seguridad!']);
 		exit;
 	}
 
+	// Recoger y sanear los datos
+	$name = filter_input(INPUT_POST, 'name', FILTER_SANITIZE_STRING);
+	$email = filter_input(INPUT_POST, 'email', FILTER_VALIDATE_EMAIL);
+	$phone = filter_input(INPUT_POST, 'phone', FILTER_SANITIZE_STRING);
+	$subject = filter_input(INPUT_POST, 'subject', FILTER_SANITIZE_STRING);
+	$message = filter_input(INPUT_POST, 'message', FILTER_SANITIZE_STRING);
 
-	/*-------------------------------------------------
-		SPAM Protection
-	---------------------------------------------------*/
-
-	function spam_keyword_check( $submitted, $spamwords ) {
-		if( is_array( $submitted ) ) {
-			return false;
-		}
-		if( !is_array( $spamwords ) ) $spamwords = array( $spamwords );
-		foreach( $spamwords as $spamstring ) {
-			if( ( $position = stripos( $submitted, $spamstring ) ) !== false ) return $position;
-		}
-		return false;
+	// Si el email no es válido, detenemos el proceso
+	if (!$email) {
+		echo json_encode(['status' => 'error', 'message' => 'La dirección de correo electrónico es inválida.']);
+		exit;
 	}
 
-	function spam_url_check( $submitted ) {
-		if( is_array( $submitted ) ) {
-			return false;
-		}
+	$all_sent = true;
 
-		$pattern = "/(http|https)\:\/\/(www\.)?[a-zA-Z0-9\-\.]+\.[a-zA-Z]{2,3}(\/\S*)?/";
+	// ===========================================
+	// 2. Correo de Notificación a la Empresa
+	// ===========================================
+	$company_subject = "Nuevo Contacto Web: " . ($subject ? $subject : 'Consulta sin asunto');
+	$company_body = "
+        <p><strong>De:</strong> {$name}</p>
+        <p><strong>Email:</strong> {$email}</p>
+        <p><strong>Teléfono:</strong> {$phone}</p>
+        <p><strong>Asunto:</strong> " . ($subject ? $subject : 'N/A') . "</p>
+        <hr>
+        <p><strong>Mensaje:</strong></p>
+        <p>" . nl2br($message) . "</p>
+    ";
 
-		if( preg_match_all( $pattern, $submitted, $urls ) ) {
-			return count($urls);
-		}
-
-		return false;
+	$company_sent = sendEmail(DESTINATION_EMAIL, $company_subject, $company_body);
+	if (!$company_sent) {
+		$all_sent = false;
+		// Opcionalmente, puedes enviar una notificación de fallo al administrador aquí.
 	}
 
-	foreach( $submits as $spam_submit ) {
-		if( spam_keyword_check( $spam_submit, $spam_keywords ) || spam_url_check( $spam_submit ) > $allowed_urls ) {
-			// A successful message is displayed to the submitter that makes him think that the Form has been sent so that he cannot modify the keywords to prevent SPAM
-			echo '{ "alert": "success", "message": "' . $message['success'] . '" }';
-			exit;
-		}
-	}
+	// ===========================================
+	// 3. Correo de Auto-Respuesta al Cliente
+	// ===========================================
+	$ar_subject = filter_input(INPUT_POST, 'ar_subject', FILTER_SANITIZE_STRING);
+	$ar_message_base = filter_input(INPUT_POST, 'ar_message', FILTER_SANITIZE_STRING);
+	$ar_title = filter_input(INPUT_POST, 'ar_title', FILTER_SANITIZE_STRING);
+	$ar_footer = filter_input(INPUT_POST, 'ar_footer', FILTER_SANITIZE_STRING);
 
+	// Personalizar el mensaje de auto-respuesta
+	$ar_message_personalized = str_replace('{name}', $name, $ar_message_base);
 
-	/*-------------------------------------------------
-		reCaptcha
-	---------------------------------------------------*/
+	$autoresponder_body = "
+        <div style='font-family: Arial, sans-serif; line-height: 1.6;'>
+            <h2 style='color: #003b6f;'>{$ar_title}</h2>
+            <p>{$ar_message_personalized}</p>
+            <p><strong>Detalles de tu solicitud:</strong></p>
+            <ul>
+                <li><strong>Nombre:</strong> {$name}</li>
+                <li><strong>Email:</strong> {$email}</li>
+                <li><strong>Asunto:</strong> " . ($subject ? $subject : 'N/A') . "</li>
+            </ul>
+            <p>Nuestro equipo revisará tu mensaje y se pondrá en contacto contigo lo antes posible.</p>
+            <hr>
+            <p style='font-size: 0.9em; color: #666;'>{$ar_footer}</p>
+        </div>
+    ";
 
-	if( isset( $submits['g-recaptcha-response'] ) && !isset( $submits['h-captcha-response'] ) ) {
-
-		$recaptcha_data = array(
-			'secret' => $recaptcha_secret,
-			'response' => $submits['g-recaptcha-response']
-		);
-
-		$recap_verify = curl_init();
-		curl_setopt( $recap_verify, CURLOPT_URL, "https://www.google.com/recaptcha/api/siteverify" );
-		curl_setopt( $recap_verify, CURLOPT_POST, true );
-		curl_setopt( $recap_verify, CURLOPT_POSTFIELDS, http_build_query( $recaptcha_data ) );
-		curl_setopt( $recap_verify, CURLOPT_SSL_VERIFYPEER, false );
-		curl_setopt( $recap_verify, CURLOPT_RETURNTRANSFER, true );
-		$recap_response = curl_exec( $recap_verify );
-
-		$g_response = json_decode( $recap_response );
-
-		if ( $g_response->success !== true ) {
-			echo '{ "alert": "error", "message": "' . $message['captcha_invalid'] . '" }';
-			exit;
-		}
-	}
-
-
-	/*-------------------------------------------------
-		hCaptcha
-	---------------------------------------------------*/
-
-	if( isset( $submits['h-captcha-response'] ) ) {
-
-		$hcaptcha_data = array(
-			'secret' => $hcaptcha_secret,
-			'response' => $submits['h-captcha-response']
-		);
-
-		$hcap_verify = curl_init();
-		curl_setopt( $hcap_verify, CURLOPT_URL, "https://hcaptcha.com/siteverify" );
-		curl_setopt( $hcap_verify, CURLOPT_POST, true );
-		curl_setopt( $hcap_verify, CURLOPT_POSTFIELDS, http_build_query( $hcaptcha_data ) );
-		curl_setopt( $hcap_verify, CURLOPT_SSL_VERIFYPEER, false );
-		curl_setopt( $hcap_verify, CURLOPT_RETURNTRANSFER, true );
-		$hcap_response = curl_exec( $hcap_verify );
-
-		$h_response = json_decode( $hcap_response );
-
-		if ( $h_response->success !== true ) {
-			echo '{ "alert": "error", "message": "' . $message['captcha_invalid'] . '" }';
-			exit;
-		}
+	$autoresponder_sent = sendEmail($email, $ar_subject, $autoresponder_body);
+	if (!$autoresponder_sent) {
+		$all_sent = false;
+		error_log("Error al enviar auto-respuesta a {$email}");
 	}
 
 
-	$template	= !empty( $submits['template'] ) ? $submits['template'] : 'html';
-	$html_title	= !empty( $submits['html_title'] ) ? $submits['html_title'] : 'Form Response';
-	$forcerecap	= ( !empty( $submits['force_recaptcha'] ) && $submits['force_recaptcha'] != 'false' ) ? true : false;
-	$replyto	= !empty( $submits['replyto'] ) ? explode( ',', $submits['replyto'] ) : false;
-
-	if( $forcerecap ) {
-		if( !isset( $submits['g-recaptcha-response'] ) ) {
-			echo '{ "alert": "error", "message": "' . $message['captcha_error'] . '" }';
-			exit;
-		}
-	}
-
-	/*-------------------------------------------------
-		Auto-Responders
-	---------------------------------------------------*/
-
-	$autores	= ( !empty( $submits['autoresponder'] ) && $submits['autoresponder'] != 'false' ) ? true : false;
-	$ar_subject	= !empty( $submits['ar_subject'] ) ? $submits['ar_subject'] : 'Thanks for your Email';
-	$ar_title	= !empty( $submits['ar_title'] ) ? $submits['ar_title'] : 'Its so good to hear from You!';
-	$ar_message	= !empty( $submits['ar_message'] ) ? $submits['ar_message'] : 'Autoresponder Message';
-
-	preg_match_all('#\{(.*?)\}#', $ar_message, $ar_matches);
-	if( !empty( $ar_matches[1] ) ) {
-		foreach( $ar_matches[1] as $ar_key => $ar_value ) {
-			$ar_message = str_replace( '{' . $ar_value . '}' , ( is_array($submits[ $ar_value ]) ? implode( ', ', $submits[ $ar_value ] ) : $submits[ $ar_value ] ), $ar_message );
-		}
-	}
-
-	$ar_footer	= !empty( $submits['ar_footer'] ) ? $submits['ar_footer'] : 'Copyrights &copy; ' . date('Y') . ' <strong>SemiColonWeb</strong>. All Rights Reserved.';
-
-	$mail->Subject = !empty( $submits['subject'] ) ? $submits['subject'] : 'Form Response from your Website';
-	$mail->SetFrom( $fromemail['email'] , $fromemail['name'] );
-
-	if( !empty( $replyto ) ) {
-		if( count( $replyto ) > 1 ) {
-			$replyto_e = $submits[ $replyto[0] ];
-			$replyto_n = $submits[ $replyto[1] ];
-			$mail->AddReplyTo( $replyto_e , $replyto_n );
-		} elseif( count( $replyto ) == 1 ) {
-			$replyto_e = $submits[ $replyto[0] ];
-			$mail->AddReplyTo( $replyto_e );
-		}
-	}
-
-	foreach( $toemails as $toemail ) {
-		$mail->AddAddress( $toemail['email'] , $toemail['name'] );
-	}
-
-	/*-------------------------------------------------
-		All Processing for Fields starting with
-		Underscore must be done before this line of code
-	---------------------------------------------------*/
-
-	$underscore = array();
-
-	foreach( $submits as $name => $value ) {
-		if( strpos($name, '_') === 0 ) {
-			$underscore[] = $name;
-		}
-	}
-
-	$unsets = array( 'prefix', 'subject', 'replyto', 'template', 'html_title', 'message', 'autoresponder', 'ar_subject', 'ar_title', 'ar_message', 'ar_footer', $prefix . 'botcheck', 'g-recaptcha-response', 'h-captcha-response', 'force_recaptcha', $prefix . 'submit' );
-
-	$unsets = $unsets + $underscore;
-
-	foreach( $unsets as $unset ) {
-		unset( $submits[ $unset ] );
-	}
-
-	$fields = array();
-
-	foreach( $submits as $name => $value ) {
-		if( empty( $value ) ) {
-			continue;
-		}
-
-		$name = str_replace( $prefix , '', $name );
-		$name = function_exists('mb_convert_case') ? mb_convert_case( $name, MB_CASE_TITLE, "UTF-8" ) : ucwords($name);
-
-		if( is_array( $value ) ) {
-			$value = implode( ', ', $value );
-		}
-
-		$fields[$name] = nl2br( filter_var( $value, FILTER_SANITIZE_SPECIAL_CHARS ) );
-	}
-
-	$files = $_FILES;
-
-	foreach( $files as $file => $filevalue ) {
-		if( is_array( $filevalue['name'] ) ) {
-			$filecount = count( $filevalue['name'] );
-
-			for( $f = 0; $f < $filecount; $f++ ) {
-				if ( isset( $_FILES[ $file ] ) && $_FILES[ $file ]['error'][ $f ] == UPLOAD_ERR_OK ) {
-					$mail->IsHTML(true);
-					$mail->AddAttachment( $_FILES[ $file ]['tmp_name'][ $f ], $_FILES[ $file ]['name'][ $f ] );
-				}
-			}
-		} else {
-			if ( isset( $_FILES[ $file ] ) && $_FILES[ $file ]['error'] == UPLOAD_ERR_OK ) {
-				$mail->IsHTML(true);
-				$mail->AddAttachment( $_FILES[ $file ]['tmp_name'], $_FILES[ $file ]['name'] );
-			}
-		}
-	}
-
-	$response = array();
-
-	foreach( $fields as $fieldname => $fieldvalue ) {
-		if( $template == 'text' ) {
-			$response[] = $fieldname . ': ' . $fieldvalue;
-		} else {
-			$fieldname = '<tr>
-								<td style="font-size: 16px; line-height: 24px; font-weight: bold; padding: 0 0 5px 0;" align="left">' . $fieldname . '</td>
-							</tr>';
-			$fieldvalue = '<tr>
-								<td style="font-size: 16px; line-height: 24px; color: #777777; padding: 0 15px 30px 0;" align="left">' . $fieldvalue . '</td>
-							</tr>';
-			$response[] = $fieldname . $fieldvalue;
-		}
-	}
-
-	$referrer = $_SERVER['HTTP_REFERER'] ? '<br><br><br>This Form was submitted from: ' . $_SERVER['HTTP_REFERER'] : '';
-
-	$html_before = '<table border="0" cellpadding="0" cellspacing="0" height="100%" width="100%" bgcolor="#eeeeee" style="width: 100%; height: 100%; padding: 50px 0 50px 0;">
-				<tr>
-					<td align="center" valign="top">
-						<table border="0" cellpadding="0" cellspacing="0" width="84%" bgcolor="#ffffff" style="width: 84%;">
-							<tr>
-								<td align="center" valign="top">
-									';
-
-	$html_after = '</td>
-							</tr>
-						</table>
-					</td>
-				</tr>
-			</table>';
-
-	if( $template == 'text' ) {
-		$body = implode( "<br>", $response ) . $referrer;
+	// ===========================================
+	// 4. Respuesta al Cliente (AJAX o Recarga)
+	// ===========================================
+	// Suponiendo que tu formulario utiliza AJAX (como sugiere la etiqueta <div id="form-result">)
+	if ($all_sent) {
+		echo json_encode(['status' => 'success', 'message' => '¡Mensaje enviado con éxito! Revisa tu bandeja de entrada para la confirmación.']);
 	} else {
-		$html = $html_before . '<!-- / Header -->
-									<table border="0" cellpadding="0" cellspacing="0" width="84%" style="width: 84%;">
-										<tr>
-											<td style="padding: 30px 0 30px 0; border-bottom: solid 1px #eeeeee; font-size: 30px; font-weight: bold; text-decoration: none; color: #000000;" align="left">
-												' . $html_title . '
-											</td>
-										</tr>
-									</table>
-
-									<!-- / Sub-Header -->
-									<table border="0" cellpadding="0" cellspacing="0" width="84%" style="width: 84%; padding: 60px 0 30px 0;"">
-										' . implode( '', $response ) . '
-									</table>
-
-									<!-- / Footer -->
-									<table border="0" cellpadding="0" cellspacing="0" width="100%" align="center">
-										<tr>
-											<td align="center">
-												<table border="0" cellpadding="0" cellspacing="0" width="84%" align="center" style="border-top: 1px solid #eeeeee; width: 84%;">
-													<tr>
-														<td style="color: #d5d5d5; text-align: center; font-size: 12px; padding: 30px 0 30px 0; line-height: 22px;">' . strip_tags( $referrer ) . '</td>
-													</tr>
-												</table>
-											</td>
-										</tr>
-									</table>
-									' . $html_after;
-
-		$body = $html;
+		// Mensaje de error más genérico para el usuario
+		echo json_encode(['status' => 'error', 'message' => 'Hubo un problema al enviar tu mensaje. Por favor, inténtalo de nuevo más tarde.']);
 	}
-
-	if( $autores && !empty( $replyto_e ) ) {
-		$autoresponder = new PHPMailer();
-
-		/* Add your Auto-Responder SMTP Codes after this Line */
-
-
-		// End of Auto-Responder SMTP
-
-		$autoresponder->SetFrom( $fromemail['email'] , $fromemail['name'] );
-		if( !empty( $replyto_n ) ) {
-			$autoresponder->AddAddress( $replyto_e , $replyto_n );
-		} else {
-			$autoresponder->AddAddress( $replyto_e );
-		}
-		$autoresponder->Subject = $ar_subject;
-
-		$ar_body = $html_before . '<!-- / Header -->
-					<table border="0" cellpadding="0" cellspacing="0" width="84%" style="width: 84%;">
-						<tr>
-							<td style="padding: 30px 0 30px 0; border-bottom: solid 1px #eeeeee; font-size: 30px; font-weight: bold; text-decoration: none; color: #000000;" align="left">
-								' . $ar_title . '
-							</td>
-						</tr>
-					</table>
-
-					<!-- / Sub-Header -->
-					<table border="0" cellpadding="0" cellspacing="0" width="84%" style="width: 84%; padding: 60px 0 30px 0;"">
-						<tr>
-							<td style="font-size: 16px; line-height: 26px; color: #777777; padding: 0 15px 30px 0;" align="left">' . $ar_message . '</td>
-						</tr>
-					</table>
-
-					<!-- / Footer -->
-					<table border="0" cellpadding="0" cellspacing="0" width="100%" align="center">
-						<tr>
-							<td align="center">
-								<table border="0" cellpadding="0" cellspacing="0" width="84%" align="center" style="border-top: 1px solid #eeeeee; width: 84%;">
-									<tr>
-										<td style="color: #d5d5d5; text-align: center; font-size: 12px; padding: 30px 0 30px 0; line-height: 22px;">' . $ar_footer . '</td>
-									</tr>
-								</table>
-							</td>
-						</tr>
-					</table>
-					' . $html_after;
-
-		$autoresponder->MsgHTML( $ar_body );
-		$autoresponder->CharSet = "UTF-8";
-	}
-
-	$mail->MsgHTML( $body );
-	$mail->CharSet = "UTF-8";
-	$sendEmail = $mail->Send();
-
-	if( $sendEmail == true ):
-
-		if( $autores && !empty( $replyto_e ) ) {
-			$send_arEmail = $autoresponder->Send();
-		}
-
-		echo '{ "alert": "success", "message": "' . $message['success'] . '" }';
-	else:
-		echo '{ "alert": "error", "message": "' . $message['error'] . '<br><br><strong>Reason:</strong><br>' . $mail->ErrorInfo . '" }';
-	endif;
 
 } else {
-	echo '{ "alert": "error", "message": "' . $message['error_unexpected'] . '" }';
+	// Acceso directo al script sin POST
+	echo json_encode(['status' => 'error', 'message' => 'Acceso no permitido.']);
 }
 
+?>
