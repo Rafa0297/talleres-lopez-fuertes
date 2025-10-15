@@ -688,7 +688,7 @@
 
 				</div>
 
-				<a href="portfolio.php"
+				<a href="contacto.php"
 					class="button border-bottom-0 button-full text-center text-end mb-6 fw-light font-primary"
 					style="font-size: 26px;">
 					<div class="container">
@@ -841,28 +841,46 @@
 
 							<div class="widget quick-contact-widget form-widget">
 								<h4>Solicita Tu Presupuesto</h4>
-								<div class="form-result"></div>
-								<form id="quick-contact-form" name="quick-contact-form" action="include/form.php" method="post"
-									class="quick-contact-form mb-0">
+								<div id="quick-form-result" class="form-result"></div>
+
+								<form id="quick-contact-form" class="mb-0" action="include/form.php" method="POST">
 									<div class="form-process">
 										<div class="css3-spinner">
 											<div class="css3-spinner-scaler"></div>
 										</div>
 									</div>
-									<input type="text" class="required form-control mb-2" id="quick-contact-form-name"
-										name="quick-contact-form-name" value="" placeholder="Nombre Completo">
-									<input type="text" class="required form-control email mb-2" id="quick-contact-form-email"
-										name="quick-contact-form-email" value="" placeholder="Dirección de Email">
-									<textarea class="required form-control mb-2 short-textarea" id="quick-contact-form-message"
-										name="quick-contact-form-message" rows="4" cols="30" placeholder="Mensaje"></textarea>
-									<input type="text" class="d-none" id="quick-contact-form-botcheck" name="quick-contact-form-botcheck"
-										value="">
-									<input type="hidden" name="prefix" value="quick-contact-form-">
-									<button type="submit" id="quick-contact-form-submit" name="quick-contact-form-submit"
-										class="button button-small m-0" value="submit">Solicitar</button>
-								</form>
 
+									<!-- Nombre -->
+									<input type="text" class="required form-control mb-2" id="name" name="name"
+										placeholder="Nombre completo" required>
+
+									<!-- Email -->
+									<input type="email" class="required form-control mb-2" id="email" name="email"
+										placeholder="Correo electrónico" required>
+
+									<!-- Mensaje -->
+									<textarea class="required form-control mb-3" id="message" name="message" rows="4"
+										placeholder="Mensaje" required></textarea>
+
+									<!-- Campo oculto para protección antispam -->
+									<input type="text" name="contact-botcheck" value="" class="d-none">
+
+									<!-- Configuración oculta -->
+									<input type="hidden" name="prefix" value="contact-">
+									<input type="hidden" name="replyto" value="email">
+									<input type="hidden" name="autoresponder" value="true">
+									<input type="hidden" name="ar_subject" value="Gracias por contactarnos">
+									<input type="hidden" name="ar_message"
+										value="Hola {name}, gracias por tu mensaje. Nos pondremos en contacto contigo pronto.">
+									<input type="hidden" name="ar_title" value="Hemos recibido tu mensaje">
+									<input type="hidden" name="ar_footer" value="Talleres López Fuertes · Marbella">
+
+									<button type="submit" id="quick-contact-form-submit" class="button button-small m-0 px-4 py-2">
+										Solicitar
+									</button>
+								</form>
 							</div>
+
 
 						</div>
 					</div>
@@ -1017,39 +1035,7 @@
 
 		<!-- Footer
 		============================================= -->
-		<footer id="footer" class="dark">
-			<div class="container">
-
-				<div class="row text-center text-md-start align-items-center py-4">
-					<div class="col-md-8 mb-3 mb-md-0">
-						<p class="mb-1">
-							<i class="bi bi-geo-alt-fill me-2"></i>
-							Ctra de Ronda, Polígono Industrial La Quinta, Naves 4 y 5 - 29670 San Pedro de Alcántara - Málaga
-						</p>
-						<p class="mb-1"><i class="bi bi-telephone me-2"></i> (+34) 952 78 19 97</p>
-						<p class="mb-0"><i class="bi bi-envelope me-2"></i> info@tallereslopezfuertes.com</p>
-					</div>
-
-					<div class="col-md-4 text-center text-md-end">
-						<a href="#" class="social-icon"><i class="fa-brands fa-facebook-f"></i></a>
-						<a href="#" class="social-icon"><i class="fa-brands fa-instagram"></i></a>
-						<a href="#" class="social-icon"><i class="fa-brands fa-youtube"></i></a>
-					</div>
-				</div>
-
-			</div>
-
-			<div id="copyrights">
-				<div class="container d-flex flex-column flex-md-row justify-content-between align-items-center text-center">
-					<div class="mb-2 mb-md-0">
-						© 2023 Talleres López Fuertes - Todos los derechos reservados
-					</div>
-					<div>
-						<a href="#">Términos</a> | <a href="#">Política de Privacidad</a>
-					</div>
-				</div>
-			</div>
-		</footer>
+		<?php include 'footer.php'; ?>
 
 		<!-- #footer end -->
 
@@ -1063,6 +1049,49 @@
 	============================================= -->
 	<script src="js/plugins.min.js"></script>
 	<script src="js/functions.bundle.js"></script>
+
+	<script>
+		document.addEventListener('DOMContentLoaded', function () {
+			const quickForm = document.getElementById('quick-contact-form');
+			const quickResult = document.getElementById('quick-form-result');
+
+			if (quickForm) {
+				quickForm.addEventListener('submit', function (e) {
+					e.preventDefault();
+
+					quickResult.innerHTML = '<div class="alert alert-info text-center">Enviando mensaje...</div>';
+					const formData = new FormData(quickForm);
+
+					fetch(quickForm.getAttribute('action'), {
+						method: 'POST',
+						body: formData
+					})
+						.then(response => response.text())
+						.then(text => {
+							const jsonStart = text.indexOf('{');
+							if (jsonStart !== -1) {
+								return JSON.parse(text.substring(jsonStart));
+							}
+							throw new Error('Respuesta del servidor no válida');
+						})
+						.then(data => {
+							if (data.status === 'success') {
+								quickResult.innerHTML = '<div class="alert alert-success text-center">' + data.message + '</div>';
+								quickForm.reset();
+							} else {
+								quickResult.innerHTML = '<div class="alert alert-danger text-center">' + data.message + '</div>';
+							}
+						})
+						.catch(err => {
+							console.error('Error al enviar el formulario:', err);
+							quickResult.innerHTML = '<div class="alert alert-danger text-center">Error al enviar el mensaje. Inténtalo más tarde.</div>';
+						});
+				});
+			}
+		});
+	</script>
+
+
 
 </body>
 

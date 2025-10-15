@@ -2,30 +2,38 @@
 <html dir="ltr" lang="es">
 
 <head>
-
   <meta charset="utf-8">
   <meta http-equiv="x-ua-compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Talleres López Fuertes | Carpintería de Aluminio y PVC en Marbella</title>
+  <!-- 🔹 SEO OPTIMIZADO -->
+  <title>Productos de Carpintería de Aluminio y PVC | Talleres López Fuertes Marbella</title>
   <meta name="description"
-    content="Talleres López Fuertes es especialista en carpintería de aluminio, PVC, persianas, cortinas de cristal y mamparas en Marbella y la Costa del Sol. Calidad y diseño a medida.">
+    content="Descubre los productos de Talleres López Fuertes: carpintería de aluminio y PVC, cortinas de cristal, techos, mamparas, persianas y mosquiteras fabricadas a medida en Marbella.">
+  <meta name="keywords"
+    content="carpintería aluminio Marbella, carpintería PVC, cortinas de cristal, techos aluminio, mosquiteras, persianas, mamparas baño, cerramientos a medida">
   <meta name="author" content="Talleres López Fuertes">
 
+  <!-- 🔹 Favicon -->
   <link rel="icon" href="demos/construction/images/icons/favicon32.png" type="image/png">
 
-  <meta property="og:title" content="Talleres López Fuertes | Carpintería de Aluminio y PVC en Marbella">
+  <!-- 🔹 Open Graph (para Facebook, WhatsApp, LinkedIn) -->
+  <meta property="og:title" content="Productos de Carpintería de Aluminio y PVC | Talleres López Fuertes Marbella">
   <meta property="og:description"
-    content="Especialistas en carpintería de aluminio, PVC y cerramientos. Calidad, diseño y soluciones a medida en la Costa del Sol.">
-  <meta property="og:image" content="https://tallereslopezfuertes.icomdi.com/demos/construction/images/slider/1.jpg">
-  <meta property="og:url" content="https://tallereslopezfuertes.icomdi.com">
+    content="Conoce nuestra gama de productos en aluminio y PVC: ventanas, cerramientos, cortinas de cristal, techos, mamparas y más. Calidad, diseño y durabilidad.">
+  <meta property="og:image" content="https://tallereslopezfuertes.icomdi.com/demos/construction/images/products/1.jpg">
+  <meta property="og:url" content="https://tallereslopezfuertes.icomdi.com/productos.php">
   <meta property="og:type" content="website">
+  <meta property="og:locale" content="es_ES">
 
+  <!-- 🔹 Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Talleres López Fuertes | Carpintería de Aluminio y PVC en Marbella">
-  <meta name="twitter:description" content="Carpintería de aluminio, PVC, persianas y cerramientos en Marbella.">
-  <meta name="twitter:image" content="https://tallereslopezfuertes.icomdi.com/demos/construction/images/slider/1.jpg">
+  <meta name="twitter:title" content="Productos de Carpintería de Aluminio y PVC | Talleres López Fuertes Marbella">
+  <meta name="twitter:description"
+    content="Fabricación e instalación de productos de aluminio y PVC en Marbella: ventanas, persianas, mosquiteras, mamparas y cerramientos a medida.">
+  <meta name="twitter:image" content="https://tallereslopezfuertes.icomdi.com/demos/construction/images/products/1.jpg">
 
+  <!-- 🔹 Fuentes y estilos -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
@@ -39,8 +47,6 @@
   <link rel="stylesheet" href="css/custom.css">
 </head>
 
-
-</head>
 
 <body class="stretched">
 
@@ -404,39 +410,7 @@
     </section>
 
 
-    <footer id="footer" class="dark">
-      <div class="container">
-
-        <div class="row text-center text-md-start align-items-center py-4">
-          <div class="col-md-8 mb-3 mb-md-0">
-            <p class="mb-1">
-              <i class="bi bi-geo-alt-fill me-2"></i>
-              Ctra de Ronda, Polígono Industrial La Quinta, Naves 4 y 5 - 29670 San Pedro de Alcántara - Málaga
-            </p>
-            <p class="mb-1"><i class="bi bi-telephone me-2"></i> (+34) 952 78 19 97</p>
-            <p class="mb-0"><i class="bi bi-envelope me-2"></i> info@tallereslopezfuertes.com</p>
-          </div>
-
-          <div class="col-md-4 text-center text-md-end">
-            <a href="#" class="social-icon"><i class="fa-brands fa-facebook-f"></i></a>
-            <a href="#" class="social-icon"><i class="fa-brands fa-instagram"></i></a>
-            <a href="#" class="social-icon"><i class="fa-brands fa-youtube"></i></a>
-          </div>
-        </div>
-
-      </div>
-
-      <div id="copyrights">
-        <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center text-center">
-          <div class="mb-2 mb-md-0">
-            © 2023 Talleres López Fuertes - Todos los derechos reservados
-          </div>
-          <div>
-            <a href="#">Términos</a> | <a href="#">Política de Privacidad</a>
-          </div>
-        </div>
-      </div>
-    </footer>
+    <?php include 'footer.php'; ?>
 
   </div>
   <div id="gotoTop" class="uil uil-angle-up"></div>
