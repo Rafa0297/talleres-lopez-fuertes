@@ -2,52 +2,82 @@
 <html dir="ltr" lang="es">
 
 <head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="x-ua-compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- 🔹 SEO Optimizado -->
+  <title>Contacto | Talleres López Fuertes | Carpintería de Aluminio y PVC en Marbella</title>
+  <meta name="description"
+    content="Ponte en contacto con Talleres López Fuertes en Marbella. Solicita tu presupuesto o consulta sobre carpintería de aluminio, PVC, cerramientos y mamparas. Te responderemos rápido.">
+  <meta name="keywords"
+    content="contacto carpintería aluminio marbella, presupuesto pvc marbella, taller aluminio marbella, carpintería pvc costa del sol, taller carpintería marbella, Talleres López Fuertes contacto">
+  <meta name="author" content="Talleres López Fuertes">
+  <link rel="canonical" href="https://tallereslopezfuertes.icomdi.com/contacto.php">
 
-    <!-- SEO Básico -->
-    <title>Talleres López Fuertes | Carpintería de Aluminio y PVC en Marbella</title>
-    <meta name="description"
-      content="Talleres López Fuertes es especialista en carpintería de aluminio, PVC, persianas, cortinas de cristal y mamparas en Marbella y la Costa del Sol. Calidad y diseño a medida.">
-    <meta name="author" content="Talleres López Fuertes">
+  <!-- 🔹 Favicon -->
+  <link rel="icon" href="demos/construction/images/icons/favicon32.png" type="image/png">
 
-    <!-- Icono del sitio -->
-    <link rel="icon" href="demos/construction/images/icons/favicon32.png" type="image/png">
+  <!-- 🔹 Open Graph / Facebook / WhatsApp -->
+  <meta property="og:title" content="Contacto | Talleres López Fuertes - Carpintería de Aluminio y PVC en Marbella">
+  <meta property="og:description"
+    content="Contacta con Talleres López Fuertes. Carpintería de aluminio y PVC en Marbella. Presupuestos sin compromiso y atención personalizada.">
+  <meta property="og:image" content="https://tallereslopezfuertes.icomdi.com/demos/construction/images/slider/3.jpg">
+  <meta property="og:url" content="https://tallereslopezfuertes.icomdi.com/contacto.php">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="es_ES">
 
-    <!-- Open Graph (para Facebook, LinkedIn, WhatsApp) -->
-    <meta property="og:title" content="Talleres López Fuertes | Carpintería de Aluminio y PVC en Marbella">
-    <meta property="og:description"
-      content="Especialistas en carpintería de aluminio, PVC y cerramientos. Calidad, diseño y soluciones a medida en la Costa del Sol.">
-    <meta property="og:image" content="https://tallereslopezfuertes.icomdi.com/demos/construction/images/slider/1.jpg">
-    <meta property="og:url" content="https://tallereslopezfuertes.icomdi.com">
-    <meta property="og:type" content="website">
+  <!-- 🔹 Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Contacto | Talleres López Fuertes - Carpintería de Aluminio y PVC en Marbella">
+  <meta name="twitter:description"
+    content="¿Tienes dudas o necesitas un presupuesto? Escríbenos y te ayudaremos. Carpintería de aluminio y PVC en Marbella.">
+  <meta name="twitter:image" content="https://tallereslopezfuertes.icomdi.com/demos/construction/images/slider/3.jpg">
 
-    <!-- Twitter Card -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Talleres López Fuertes | Carpintería de Aluminio y PVC en Marbella">
-    <meta name="twitter:description" content="Carpintería de aluminio, PVC, persianas y cerramientos en Marbella.">
-    <meta name="twitter:image" content="https://tallereslopezfuertes.icomdi.com/demos/construction/images/slider/1.jpg">
+  <!-- 🔹 Fuentes -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Source+Sans+Pro:wght@300;400;600;700&display=swap"
+    rel="stylesheet">
 
-    <!-- Fuentes -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Source+Sans+Pro:wght@300;400;600;700&display=swap"
-      rel="stylesheet">
+  <!-- 🔹 Estilos -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="css/font-icons.css">
+  <link rel="stylesheet" href="css/swiper.css">
+  <link rel="stylesheet" href="demos/construction/construction.css">
+  <link rel="stylesheet" href="css/custom.css">
 
-    <!-- CSS -->
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="css/font-icons.css">
-    <link rel="stylesheet" href="css/swiper.css">
-    <link rel="stylesheet" href="demos/construction/construction.css">
-    <link rel="stylesheet" href="css/custom.css">
-  </head>
-
-
+  <!-- 🔹 Schema.org ContactPage -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ContactPage",
+    "mainEntity": {
+      "@type": "Organization",
+      "name": "Talleres López Fuertes",
+      "url": "https://tallereslopezfuertes.icomdi.com",
+      "logo": "https://tallereslopezfuertes.icomdi.com/demos/construction/images/logo@2x.png",
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+34 952 78 19 97",
+        "contactType": "customer service",
+        "areaServed": "ES",
+        "availableLanguage": ["Spanish"]
+      },
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Ctra de Ronda, Polígono Industrial La Quinta, Naves 4 y 5",
+        "addressLocality": "San Pedro de Alcántara",
+        "postalCode": "29670",
+        "addressRegion": "Málaga",
+        "addressCountry": "ES"
+      }
+    }
+  }
+  </script>
 </head>
+
 
 <body class="stretched">
 
