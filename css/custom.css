@@ -242,10 +242,16 @@ a:hover {
 
 /* Estilos para el efecto de zoom en las imágenes de productos */
 .feature-box .fbox-media img.clickable-product-image {
-    transition: transform 0.3s ease-in-out; /* Define una transición suave */
-    will-change: transform; /* Optimización para navegadores */
+  transition: transform 0.3s ease-in-out; /* Define una transición suave */
+  will-change: transform; /* Optimización para navegadores */
 }
 
 .feature-box .fbox-media img.clickable-product-image:hover {
-    transform: scale(1.05); /* Escala la imagen al 105% de su tamaño original */
+  transform: scale(1.05); /* Escala la imagen al 105% de su tamaño original */
+}
+
+.container {
+  padding: 8px;
+  margin: 0 auto;
+  align-items: center;
 }
