@@ -250,8 +250,22 @@ a:hover {
   transform: scale(1.05); /* Escala la imagen al 105% de su tamaño original */
 }
 
-.container {
-  padding: 8px;
-  margin: 0 auto;
-  align-items: center;
+@media (min-width: 990px) and (max-width: 1400px) {
+  .header-extras li .he-text {
+    padding: 0;
+    padding-right: 6px;
+  }
+
+  .header-extras li .he-text span {
+    font-size: 0.95em;
+  }
+
+  .header-extras li i {
+    font-size: 22px;
+  }
+
+  .header-extras li {
+    margin: 0;
+    padding: 0;
+  }
 }
