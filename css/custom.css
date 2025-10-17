@@ -250,18 +250,25 @@ a:hover {
   transform: scale(1.05); /* Escala la imagen al 105% de su tamaño original */
 }
 
+.header-row {
+  padding: 10px 0;
+}
+
 @media (min-width: 990px) and (max-width: 1400px) {
+  .header-row {
+    gap: 68px;
+    padding: 10px 0;
+  }
   .header-extras li .he-text {
-    padding: 0;
-    padding-right: 6px;
+    padding: 10px;
   }
 
   .header-extras li .he-text span {
-    font-size: 0.95em;
+    font-size: 0.82em;
   }
 
   .header-extras li i {
-    font-size: 22px;
+    font-size: 26px;
   }
 
   .header-extras li {
