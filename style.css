@@ -11315,9 +11315,9 @@ textarea.form-control-lg {
   .mb-lg-auto {
     margin-bottom: auto !important;
   }
-  .ms-lg-0 {
+  /* .ms-lg-0 {
     margin-left: 0 !important;
-  }
+  } */
   .ms-lg-1 {
     margin-left: 0.25rem !important;
   }

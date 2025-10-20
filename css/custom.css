@@ -242,10 +242,32 @@ a:hover {
 
 /* Estilos para el efecto de zoom en las imágenes de productos */
 .feature-box .fbox-media img.clickable-product-image {
-    transition: transform 0.3s ease-in-out; /* Define una transición suave */
-    will-change: transform; /* Optimización para navegadores */
+  transition: transform 0.3s ease-in-out; /* Define una transición suave */
+  will-change: transform; /* Optimización para navegadores */
 }
 
 .feature-box .fbox-media img.clickable-product-image:hover {
-    transform: scale(1.05); /* Escala la imagen al 105% de su tamaño original */
+  transform: scale(1.05); /* Escala la imagen al 105% de su tamaño original */
+}
+
+.header-row {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.header-extras {
+  padding-top: 10px;
+}
+
+@media (min-width: 992px) and (max-width: 1400px) {
+  .header-extras {
+    flex-wrap: nowrap;
+  }
+
+  .header-extras li {
+    margin-left: 0px;
+    padding-left: 5px;
+    padding-right: 10px;
+    width: max-content;
+  }
 }
