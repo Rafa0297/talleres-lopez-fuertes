@@ -186,7 +186,7 @@ a:hover {
 }
 
 /* Ocultar texto en móviles si ya lo hiciste antes */
-@media (max-width: 991px) {
+@media (max-width: 884px) {
   .top-links-item a {
     font-size: 0;
   }
@@ -225,7 +225,7 @@ a:hover {
 }
 
 /* Ajustar iconos y ocultar texto en móvil */
-@media (max-width: 991px) {
+@media (max-width: 884px) {
   #top-bar .top-links-container {
     justify-content: center; /* Centra los iconos en móvil */
   }
@@ -254,25 +254,34 @@ a:hover {
   padding: 10px 0;
 }
 
-@media (min-width: 990px) and (max-width: 1400px) {
-  .header-row {
-    gap: 68px;
-    padding: 10px 0;
-  }
-  .header-extras li .he-text {
-    padding: 10px;
+@media (min-width: 885px) and (max-width: 1400px) {
+  #header .header-row {
+    display: flex !important;
+    flex-direction: column; /* Apila el contenido verticalmente */
+    align-items: center; /* Centra el contenido horizontalmente */
   }
 
-  .header-extras li .he-text span {
-    font-size: 0.82em;
+  #logo {
+    order: 1; /* El logo va arriba */
+    margin: 10px 0 10px 0 !important; /* Espaciado vertical para separar */
+    margin-left: 0 !important;
+    margin-right: 0 !important;
   }
 
-  .header-extras li i {
-    font-size: 26px;
+  .header-misc {
+    order: 2; /* Los extras van debajo */
+    display: flex !important; /* Asegura que se muestre, aunque la clase d-lg-flex ya debería hacerlo */
+    margin: 0 auto; /* Centra el bloque de extras si es necesario */
+    padding-bottom: 10px; /* Separación con el menú */
+  }
+
+  .header-extras {
+    flex-direction: row; /* Mantiene los <li> uno al lado del otro */
+    justify-content: center; /* Centra los elementos de contacto */
   }
 
   .header-extras li {
-    margin: 0;
-    padding: 0;
+    padding: 0 10px;
+    width: fit-content;
   }
 }

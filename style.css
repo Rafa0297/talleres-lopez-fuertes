@@ -803,12 +803,12 @@ progress {
     max-width: 720px;
   }
 }
-@media (min-width: 992px) {
+@media (min-width: 884px) {
   .container-lg,
   .container-md,
   .container-sm,
   .container {
-    max-width: 960px;
+    max-width: 1200px;
   }
 }
 @media (min-width: 1200px) {
@@ -827,7 +827,7 @@ progress {
   .container-md,
   .container-sm,
   .container {
-    max-width: 1320px;
+    max-width: 1500px;
   }
 }
 :root {

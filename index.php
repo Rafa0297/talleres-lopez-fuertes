@@ -132,9 +132,9 @@
 						<ul class="header-extras">
 							<li>
 								<i class="i-plain bi-telephone m-0"></i>
-								<div class="he-text">
-									Llámanos
-									<span class="header-span">(+34) 952 78 19 97</span>
+                <div class="he-text">
+                  Llámanos
+                  <span class="header-span">952 78 19 97</span>
 								</div>
 							</li>
 							<li>
