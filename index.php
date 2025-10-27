@@ -2,50 +2,46 @@
 <html dir="ltr" lang="es">
 
 <head>
+	<meta charset="utf-8">
+	<meta http-equiv="x-ua-compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<head>
-		<meta charset="utf-8">
-		<meta http-equiv="x-ua-compatible" content="IE=edge">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- SEO Básico -->
+	<title>Talleres López Fuertes | Carpintería de Aluminio y PVC en Marbella</title>
+	<meta name="description"
+		content="Talleres López Fuertes es especialista en carpintería de aluminio, PVC, persianas, cortinas de cristal y mamparas en Marbella y la Costa del Sol. Calidad y diseño a medida.">
+	<meta name="author" content="Talleres López Fuertes">
 
-		<!-- SEO Básico -->
-		<title>Talleres López Fuertes | Carpintería de Aluminio y PVC en Marbella</title>
-		<meta name="description"
-			content="Talleres López Fuertes es especialista en carpintería de aluminio, PVC, persianas, cortinas de cristal y mamparas en Marbella y la Costa del Sol. Calidad y diseño a medida.">
-		<meta name="author" content="Talleres López Fuertes">
+	<!-- Icono del sitio -->
+	<link rel="icon" href="demos/construction/images/icons/favicon32.png" type="image/png">
 
-		<!-- Icono del sitio -->
-		<link rel="icon" href="demos/construction/images/icons/favicon32.png" type="image/png">
+	<!-- Open Graph (para Facebook, LinkedIn, WhatsApp) -->
+	<meta property="og:title" content="Talleres López Fuertes | Carpintería de Aluminio y PVC en Marbella">
+	<meta property="og:description"
+		content="Especialistas en carpintería de aluminio, PVC y cerramientos. Calidad, diseño y soluciones a medida en la Costa del Sol.">
+	<meta property="og:image" content="https://tallereslopezfuertes.icomdi.com/demos/construction/images/slider/1.jpg">
+	<meta property="og:url" content="https://tallereslopezfuertes.icomdi.com">
+	<meta property="og:type" content="website">
 
-		<!-- Open Graph (para Facebook, LinkedIn, WhatsApp) -->
-		<meta property="og:title" content="Talleres López Fuertes | Carpintería de Aluminio y PVC en Marbella">
-		<meta property="og:description"
-			content="Especialistas en carpintería de aluminio, PVC y cerramientos. Calidad, diseño y soluciones a medida en la Costa del Sol.">
-		<meta property="og:image" content="https://tallereslopezfuertes.icomdi.com/demos/construction/images/slider/1.jpg">
-		<meta property="og:url" content="https://tallereslopezfuertes.icomdi.com">
-		<meta property="og:type" content="website">
+	<!-- Twitter Card -->
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:title" content="Talleres López Fuertes | Carpintería de Aluminio y PVC en Marbella">
+	<meta name="twitter:description" content="Carpintería de aluminio, PVC, persianas y cerramientos en Marbella.">
+	<meta name="twitter:image" content="https://tallereslopezfuertes.icomdi.com/demos/construction/images/slider/1.jpg">
 
-		<!-- Twitter Card -->
-		<meta name="twitter:card" content="summary_large_image">
-		<meta name="twitter:title" content="Talleres López Fuertes | Carpintería de Aluminio y PVC en Marbella">
-		<meta name="twitter:description" content="Carpintería de aluminio, PVC, persianas y cerramientos en Marbella.">
-		<meta name="twitter:image" content="https://tallereslopezfuertes.icomdi.com/demos/construction/images/slider/1.jpg">
+	<!-- Fuentes -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Source+Sans+Pro:wght@300;400;600;700&display=swap"
+		rel="stylesheet">
 
-		<!-- Fuentes -->
-		<link rel="preconnect" href="https://fonts.googleapis.com">
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link
-			href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Source+Sans+Pro:wght@300;400;600;700&display=swap"
-			rel="stylesheet">
-
-		<!-- CSS -->
-		<link rel="stylesheet" href="style.css">
-		<link rel="stylesheet" href="css/font-icons.css">
-		<link rel="stylesheet" href="css/swiper.css">
-		<link rel="stylesheet" href="demos/construction/construction.css">
-		<link rel="stylesheet" href="css/custom.css">
-	</head>
-
+	<!-- CSS -->
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="css/font-icons.css">
+	<link rel="stylesheet" href="css/swiper.css">
+	<link rel="stylesheet" href="demos/construction/construction.css">
+	<link rel="stylesheet" href="css/custom.css">
 
 </head>
 
